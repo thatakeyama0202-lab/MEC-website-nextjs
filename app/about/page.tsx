@@ -1,0 +1,109 @@
+import type { Metadata } from "next";
+import Link from "next/link";
+
+export const metadata: Metadata = {
+  title: "ご挨拶・会社概要",
+};
+
+export default function AboutPage() {
+  return (
+    <>
+      <section className="page-hero">
+        <div className="container">
+          <p className="page-hero-label">About / Greeting</p>
+          <h1 className="page-hero-title">ご挨拶・会社概要</h1>
+        </div>
+      </section>
+
+      {/* CEO GREETING */}
+      <section className="section greeting-section">
+        <div className="container">
+          <div className="section-header">
+            <p className="section-label">Greeting</p>
+            <h2 className="section-title">ご挨拶</h2>
+          </div>
+          <div className="greeting-inner">
+            <div className="greeting-text">
+              <div className="greeting-role">CEO</div>
+              <h3 className="greeting-name">畠山 翔翼<span className="greeting-ruby">（はたけやま つばさ）</span></h3>
+              <div className="greeting-body">
+                <p>循環器内科医として、岩手県立中央病院や榊原記念病院で、急性期から亜急性期病院での診療に従事してまいりました。</p>
+                <p>臨床現場で抱いた問題意識を、自身の専門分野を活かして解決できると考え、主に透析クリニック様・在宅クリニック様へ向けた</p>
+                <ul className="greeting-services">
+                  <li>心・血管領域 超音波検査支援</li>
+                  <li>オンライン専門医相談</li>
+                </ul>
+                <p>をご提供するサービスの立ち上げに至りました。</p>
+                <p>何卒よろしくお願い申し上げます。</p>
+              </div>
+            </div>
+            <div className="greeting-photo">
+              <div className="greeting-photo-placeholder">
+                <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="40" cy="30" r="14" stroke="currentColor" strokeWidth="2"/>
+                  <path d="M12 68c0-15.464 12.536-28 28-28s28 12.536 28 28" stroke="currentColor" strokeWidth="2"/>
+                </svg>
+                <p>代表写真</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* QUALIFICATIONS */}
+      <section className="section qualifications-section">
+        <div className="container">
+          <div className="qual-grid">
+            <div className="qual-card">
+              <h4 className="qual-heading">専門分野</h4>
+              <p className="qual-content">循環器（特に心エコー検査、MRI/CT検査）</p>
+            </div>
+            <div className="qual-card">
+              <h4 className="qual-heading">資格</h4>
+              <ul className="qual-list">
+                <li>内科専門医</li>
+                <li>循環器専門医</li>
+                <li>SHD経食道エコー認定医</li>
+                <li>周術期経食道エコー認定医（JB-POT）</li>
+                <li>認定産業医</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* COMPANY INFO */}
+      <section className="section">
+        <div className="container">
+          <div className="section-header">
+            <p className="section-label">Company</p>
+            <h2 className="section-title">会社概要</h2>
+          </div>
+          <div className="company-table-wrapper">
+            <table className="company-table">
+              <tbody>
+                <tr><th>会社名</th><td>Medical Echo Consulting合同会社</td></tr>
+                <tr><th>代表者</th><td>畠山 翔翼</td></tr>
+                <tr><th>設立</th><td>2026年6月</td></tr>
+                <tr><th>所在地</th><td>〒107-0061 東京都港区北青山1-3-3 三橋ビル 3階</td></tr>
+                <tr><th>事業内容</th><td>超音波検査支援サービス、オンライン専門医コンサルテーションサービス</td></tr>
+                <tr><th>メール</th><td><a href="mailto:info@medical-echo-consult.com">info@medical-echo-consult.com</a></td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="section cta">
+        <div className="container">
+          <div className="cta-inner">
+            <h2 className="cta-title">まずはお気軽にご相談ください</h2>
+            <p className="cta-desc">超音波検査支援・専門医コンサルテーションに関するご質問・ご相談を承ります。</p>
+            <Link href="/contact" className="btn btn-white">お問い合わせはこちら</Link>
+          </div>
+        </div>
+      </section>
+    </>
+  );
+}
