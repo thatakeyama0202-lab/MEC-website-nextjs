@@ -17,7 +17,7 @@ export default function Home() {
             循環器専門医パートナーサービスです。
           </p>
           <div className="hero-actions">
-            <Link href="/service" className="btn btn-primary">事業概要を見る</Link>
+            <Link href="/service" className="btn btn-primary">サービス詳細を見る</Link>
             <Link href="/contact" className="btn btn-outline">お問い合わせ</Link>
           </div>
         </div>
@@ -103,6 +103,42 @@ export default function Home() {
           </div>
           <div className="pillars-note">
             <p>すべて、<strong>クリニック様の手出しなし</strong>で運用できる仕組みです。</p>
+          </div>
+        </div>
+      </section>
+
+      {/* SERVICE OVERVIEW */}
+      <section className="section service-overview-section">
+        <div className="container">
+          <div className="section-header">
+            <p className="section-label">Service Overview</p>
+            <h2 className="section-title">サービス概要</h2>
+          </div>
+          <div className="overview-cards">
+            <div className="overview-card">
+              <div className="overview-card-icon">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M24 4C12.954 4 4 12.954 4 24s8.954 20 20 20 20-8.954 20-20S35.046 4 24 4z" stroke="currentColor" strokeWidth="1.5"/><path d="M18 24c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" strokeWidth="1.5"/><path d="M14 24c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" strokeWidth="1.5"/><circle cx="24" cy="24" r="2" fill="currentColor"/></svg>
+              </div>
+              <h3>エコー検査の実施</h3>
+              <p>クリニック様へエコーを持参し、超音波検査を行います。</p>
+            </div>
+            <div className="overview-card">
+              <div className="overview-card-icon">
+                <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="32" rx="3" stroke="currentColor" strokeWidth="1.5"/><path d="M6 16h36" stroke="currentColor" strokeWidth="1.5"/><path d="M16 24h16M16 30h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+              </div>
+              <h3>専門医レポートの納品</h3>
+              <p>結果をレポートへまとめ、専門医のコメント付きで画像とともにお返しします。</p>
+            </div>
+            <div className="overview-card">
+              <div className="overview-card-icon">
+                <svg viewBox="0 0 48 48" fill="none"><path d="M8 12a4 4 0 014-4h24a4 4 0 014 4v18a4 4 0 01-4 4H20l-8 6V34a4 4 0 01-4-4V12z" stroke="currentColor" strokeWidth="1.5"/><path d="M16 18h16M16 24h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+              </div>
+              <h3>オンライン相談</h3>
+              <p>クリニックDr⇄専門医で臨床的疑問等を相談できるプラットフォームを付帯。循環器内科の他、精神科・脳神経内科・産婦人科にも対応。</p>
+            </div>
+          </div>
+          <div className="section-cta-link">
+            <Link href="/service" className="btn btn-primary">サービスの詳細を見る</Link>
           </div>
         </div>
       </section>

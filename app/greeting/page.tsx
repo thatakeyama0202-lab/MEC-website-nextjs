@@ -2,26 +2,22 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "ご挨拶・会社概要",
+  title: "代表挨拶",
 };
 
-export default function AboutPage() {
+export default function GreetingPage() {
   return (
     <>
       <section className="page-hero">
         <div className="container">
-          <p className="page-hero-label">About / Greeting</p>
-          <h1 className="page-hero-title">ご挨拶・会社概要</h1>
+          <p className="page-hero-label">Greeting</p>
+          <h1 className="page-hero-title">代表挨拶</h1>
         </div>
       </section>
 
       {/* CEO GREETING */}
       <section className="section greeting-section">
         <div className="container">
-          <div className="section-header">
-            <p className="section-label">Greeting</p>
-            <h2 className="section-title">ご挨拶</h2>
-          </div>
           <div className="greeting-inner">
             <div className="greeting-text">
               <div className="greeting-role">CEO</div>
@@ -68,28 +64,6 @@ export default function AboutPage() {
                 <li>認定産業医</li>
               </ul>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* COMPANY INFO */}
-      <section className="section">
-        <div className="container">
-          <div className="section-header">
-            <p className="section-label">Company</p>
-            <h2 className="section-title">会社概要</h2>
-          </div>
-          <div className="company-table-wrapper">
-            <table className="company-table">
-              <tbody>
-                <tr><th>会社名</th><td>Medical Echo Consulting合同会社</td></tr>
-                <tr><th>代表者</th><td>畠山 翔翼</td></tr>
-                <tr><th>設立</th><td>2026年6月</td></tr>
-                <tr><th>所在地</th><td>〒107-0061 東京都港区北青山1-3-3 三橋ビル 3階</td></tr>
-                <tr><th>事業内容</th><td>超音波検査支援サービス、オンライン専門医コンサルテーションサービス</td></tr>
-                <tr><th>メール</th><td><a href="mailto:info@medical-echo-consult.com">info@medical-echo-consult.com</a></td></tr>
-              </tbody>
-            </table>
           </div>
         </div>
       </section>

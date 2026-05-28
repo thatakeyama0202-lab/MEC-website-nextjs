@@ -11,8 +11,10 @@ export default function Footer() {
           </div>
           <nav className="footer-nav">
             <Link href="/">ホーム</Link>
-            <Link href="/about">ご挨拶・会社概要</Link>
-            <Link href="/service">事業概要</Link>
+            <Link href="/service">サービス詳細</Link>
+            <Link href="/company">会社概要</Link>
+            <Link href="/greeting">代表挨拶</Link>
+            <Link href="/news">お知らせ・実績</Link>
             <Link href="/contact">お問い合わせ</Link>
           </nav>
         </div>

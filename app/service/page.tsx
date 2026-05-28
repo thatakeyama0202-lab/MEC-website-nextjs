@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "事業概要",
+  title: "サービス詳細",
 };
 
 export default function ServicePage() {
@@ -10,8 +10,8 @@ export default function ServicePage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <p className="page-hero-label">Service &amp; Business</p>
-          <h1 className="page-hero-title">事業概要</h1>
+          <p className="page-hero-label">Service Details</p>
+          <h1 className="page-hero-title">サービス詳細</h1>
         </div>
       </section>
 

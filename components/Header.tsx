@@ -7,8 +7,10 @@ import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "ホーム" },
-  { href: "/about", label: "ご挨拶・会社概要" },
-  { href: "/service", label: "事業概要" },
+  { href: "/service", label: "サービス詳細" },
+  { href: "/company", label: "会社概要" },
+  { href: "/greeting", label: "代表挨拶" },
+  { href: "/news", label: "お知らせ・実績" },
   { href: "/contact", label: "お問い合わせ" },
 ];
 
