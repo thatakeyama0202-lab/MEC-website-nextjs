@@ -90,7 +90,7 @@ export default function Home() {
             </div>
             <div className="pillar-card">
               <div className="pillar-number">02</div>
-              <h3 className="pillar-title">判断を、専門医が。</h3>
+              <h3 className="pillar-title">判断を、専門医がサポート。</h3>
               <p className="pillar-desc">撮影画像を循環器専門医が読影し、臨床的アドバイスを含むレポートを納品します。</p>
             </div>
             <div className="pillar-card">
@@ -99,8 +99,12 @@ export default function Home() {
               <p className="pillar-desc">心電図読影、投薬相談、日々の診療上の疑問を、オンラインで随時お受けします。</p>
             </div>
           </div>
-          <div className="pillars-note">
-            <p>すべて、<strong>クリニック様の手出しなし</strong>で運用できる仕組みです。</p>
+          <div className="pillars-highlight">
+            <div className="pillars-highlight-icon">
+              <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="20" stroke="currentColor" strokeWidth="1.5"/><path d="M16 24l6 6 10-12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+            </div>
+            <p className="pillars-highlight-text">すべて、<strong>クリニック様の手出しなし</strong>で<br />運用できる仕組みです。</p>
+            <p className="pillars-highlight-note">※検査件数等で一部例外あり</p>
           </div>
         </div>
       </section>

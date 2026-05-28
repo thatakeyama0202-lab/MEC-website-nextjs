@@ -64,9 +64,9 @@ export default function ServicePage() {
             <div className="story-content">
               <h3 className="story-heading">現場で見た課題</h3>
               <p>急性期病院での勤務を通じて、透析患者様や在宅クリニックからの重症心血管疾患患者様が多数搬送されてくる現状を認識いたしました。</p>
-              <p>特に透析患者様においては、弁膜症や狭心症に起因する心不全、下肢動脈閉塞症などが重症化した場合、治療に難渋する事例が多々見受けられます。その結果、治療不成功や合併症、入院期間の長期化などによりADLが低下し、廃用症候群による退院困難といった事例が頻発しております。</p>
+              <p>特に透析患者様においては、弁膜症や狭心症に起因する心不全、下肢動脈閉塞症などが重症化した場合、治療に難渋する事例が多々見受けられます。その結果、治療不成功や合併症、入院期間の長期化などによりADLが低下し、廃用症候群による退院困難といった事例を複数観測しました。</p>
               <div className="story-impact">
-                <h4>三者にとって不幸な転帰</h4>
+                <h4>その結果、三者それぞれに影響が及んでいます</h4>
                 <div className="impact-grid">
                   <div className="impact-item">
                     <div className="impact-label">患者様</div>
@@ -141,33 +141,19 @@ export default function ServicePage() {
             </div>
           </div>
 
-          <div className="story-block">
-            <div className="story-number">05</div>
-            <div className="story-content">
-              <h3 className="story-heading">最適なエコーデバイスの探索</h3>
-              <p>最適なエコーデバイスを探索しました。その条件は、<strong>可能な限りコンパクト</strong>であり、<strong>必要十分な心機能評価が実施できる</strong>機器であることでした。</p>
-              <div className="device-comparison">
-                <div className="device-card problem">
-                  <h4>従来のポータブル機の課題</h4>
-                  <p>コンパクトさゆえにCW機能（Continuous Wave Doppler）やTDI機能が搭載されておらず、弁膜症や心不全の評価を十分に実施できない点にありました。</p>
-                </div>
-                <div className="device-arrow">
-                  <svg viewBox="0 0 24 24" fill="none"><path d="M12 4v16m0 0l6-6m-6 6l-6-6" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
-                </div>
-                <div className="device-card solution">
-                  <h4>Kosmos Plus による解決</h4>
-                  <p>KosmosPlusは、従来のポータブル機が抱えていたCW機能に関する課題を解決し、特に大動脈弁狭窄症や肺高血圧（体液バランス評価に利用）の評価を可能にしました。これにより、一通りの心機能評価が実現可能となりました。</p>
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div className="story-block summary-block">
             <div className="story-content">
               <div className="story-summary">
                 <p>透析クリニック様や在宅診療においては、循環器疾患を抱える患者様が一定数存在し、専門的な評価体制が不十分であるため、重症化してから救急搬送となるケースが少なくありません。これは患者様の不利益だけでなく、高次機能病院にも大きな負担をもたらしています。</p>
                 <p>心血管エコー検査は、循環器領域における診断・治療方針決定に不可欠であり、適切な機器と専門知識を有する人材があれば場所を問わず実施可能です。</p>
-                <p><strong>本サービスは、リスクを抱える患者様に対し早期に心エコーを実施し、専門医の見解を主治医にフィードバックすることにより、適切な治療介入と安定した紹介を実現いたします。</strong></p>
+              </div>
+              <div className="story-cta-box">
+                <div className="story-cta-accent"></div>
+                <div className="story-cta-content">
+                  <p className="story-cta-lead">MECは、超音波検査の包括的な支援にとどまりません。</p>
+                  <p className="story-cta-main">専門医の視点から、難解な検査結果を<strong>「明日の診療に活かせる形」</strong>で<br className="pc-only" />主治医の先生方にフィードバックいたします。</p>
+                  <p className="story-cta-closing">検査だけで終わらない——<br className="pc-only" /><strong>先生方の臨床判断を、循環器専門医が伴走してサポートする。</strong><br />それが、MECのサービスです。</p>
+                </div>
               </div>
             </div>
           </div>
