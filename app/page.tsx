@@ -86,7 +86,7 @@ export default function Home() {
             <div className="pillar-card">
               <div className="pillar-number">01</div>
               <h3 className="pillar-title">検査を、サポート。</h3>
-              <p className="pillar-desc">心血管エコーに精通した専門技師が、クリニック様へ訪問し、超音波検査業務を支援します。</p>
+              <p className="pillar-desc">超音波検査の経験を有する臨床検査技師が、クリニック様へ訪問し、検査業務を支援します。</p>
             </div>
             <div className="pillar-card">
               <div className="pillar-number">02</div>

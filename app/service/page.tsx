@@ -108,7 +108,7 @@ export default function ServicePage() {
             <div className="story-content">
               <h3 className="story-heading">心血管エコー検査の&ldquo;壁&rdquo;</h3>
               <p>心臓・血管領域のエコー検査、特に心エコー検査は、測定項目が多岐にわたり、結果の評価も複雑です。</p>
-              <p>現状、超音波検査を専門技師が代行するサービスは複数存在しますが、結果に基づき臨床にどのように活用すべきか——という評価までは十分に実施されていないのが現状です。</p>
+              <p>超音波検査の撮影代行サービスは複数存在しますが、検査結果を臨床判断にどう活かすかという評価・助言まで一貫して提供する点に、MECの特徴があります。</p>
               <p>非専門医の先生方が、循環器の専門的な知識を一から学び直すのは困難です。そのため、循環器専門ではない透析クリニック様や訪問診療クリニック様においては、心血管エコー検査が敬遠されがちです。</p>
             </div>
           </div>
@@ -120,21 +120,21 @@ export default function ServicePage() {
               <div className="strength-box">
                 <p><strong>エコーの強み：</strong>機械、撮影できる人、評価できる人がいれば、場所を選ばず質の高いサービスが提供可能。</p>
               </div>
-              <p>直接エコー機材を持ち込み、専門技師が撮影し、専門的な評価＋相談をできる場を設けることで、&ldquo;三方一両損&rdquo;の問題を解決できるのではないか——。</p>
+              <p>直接エコー機材を持ち込み、超音波検査の経験を有する臨床検査技師が撮影し、専門的な評価＋相談をできる場を設けることで、&ldquo;三方一両損&rdquo;の問題を解決できるのではないか——。</p>
               <div className="solution-impact">
-                <h4>MECがもたらす好循環</h4>
+                <h4>MECが目指す診療支援の在り方</h4>
                 <div className="impact-grid positive">
                   <div className="impact-item">
                     <div className="impact-label">患者様</div>
-                    <p>重篤化する前に介入、安定した治療につながる</p>
+                    <p>早期の専門的評価により、状態が安定する前の段階での把握を支援</p>
                   </div>
                   <div className="impact-item">
                     <div className="impact-label">クリニック</div>
-                    <p>患者様の安定した通院継続、専門機関へ安定した紹介</p>
+                    <p>継続的な通院フォローと、専門機関への紹介判断を支援</p>
                   </div>
                   <div className="impact-item">
                     <div className="impact-label">高次機能病院</div>
-                    <p>安定した病態で治療戦略（入念な術前検査）→ 良好な治療成績</p>
+                    <p>病態情報の共有を通じた、円滑な連携を支援</p>
                   </div>
                 </div>
               </div>
@@ -144,7 +144,7 @@ export default function ServicePage() {
           <div className="story-block summary-block">
             <div className="story-content">
               <div className="story-summary">
-                <p>透析クリニック様や在宅診療の現場では、循環器疾患を併せ持つ患者様が一定数いらっしゃいます。こうした患者様に対し、より早期の段階で専門的な評価を行うことができれば、症状が安定した状態での管理につながり、救急搬送に至るケースの一層の低減が期待できます。これは患者様の安心とQOLの向上に資するとともに、地域の高次機能病院との円滑な連携にも寄与するものと考えております。</p>
+                <p>透析クリニック様や在宅診療の現場では、循環器疾患を併せ持つ患者様が一定数いらっしゃいます。こうした患者様に対し、より早期の段階で専門的な評価を行うことができれば、症状が安定した状態での管理を支援することで、地域医療連携の一助となることを目指しています。これは患者様の安心とQOLの向上に資するとともに、地域の高次機能病院との円滑な連携にも寄与するものと考えております。</p>
                 <p>心血管エコー検査は、循環器領域における診断・治療方針の決定において重要な役割を果たします。適切な機器と専門的な知識を有する人材が伴えば、施設や在宅を問わず実施が可能であり、先生方の日常診療を支える一助となれるものと考えております。</p>
               </div>
               <div className="story-cta-box">
@@ -179,7 +179,7 @@ export default function ServicePage() {
               <div className="op-step-num">2</div>
               <div className="op-step-content">
                 <h4>検査実施</h4>
-                <p>専門スタッフが現地へ赴き、超音波検査業務全般を実施いたします。</p>
+                <p>超音波検査の経験を有する臨床検査技師が現地へ赴き、検査業務全般を実施いたします。</p>
               </div>
             </div>
             <div className="op-step">
@@ -227,7 +227,7 @@ export default function ServicePage() {
               <p className="detail-value">ご相談</p>
               <p className="detail-sub">1作業あたりの料金を、オーダー件数・作業時間で都度お見積りをお出しいたします。</p>
               <div className="detail-highlight">
-                <p>クリニック様の手出しのないよう、<br />最大限調整をいたします</p>
+                <p>ご契約内容やオーダー件数によっては、クリニック様のご負担を抑えられるよう料金設計をご相談させていただきます。実際のご負担額は、件数・作業時間等の条件に応じて個別にお見積りいたします。</p>
               </div>
             </div>
           </div>
