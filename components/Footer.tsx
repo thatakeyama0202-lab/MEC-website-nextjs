@@ -16,6 +16,7 @@ export default function Footer() {
             <Link href="/greeting">代表挨拶</Link>
             <Link href="/news">お知らせ・実績</Link>
             <Link href="/contact">お問い合わせ</Link>
+            <Link href="/privacy">プライバシーポリシー</Link>
           </nav>
         </div>
         <p className="copyright">&copy; 2026 Medical Echo Consulting合同会社 All Rights Reserved.</p>
