@@ -65,7 +65,7 @@ export default function ConsultationPage() {
             <div className="chat-device-frame">
               {/* Phone Status Bar */}
               <div className="chat-status-bar">
-                <span className="chat-time">14:32</span>
+                <span className="chat-time">10:30</span>
                 <div className="chat-status-icons">
                   <svg viewBox="0 0 16 12" fill="currentColor" width="16"><path d="M1 8h2v4H1zM5 5h2v7H5zM9 2h2v10H9zM13 0h2v12h-2z"/></svg>
                   <svg viewBox="0 0 18 12" fill="currentColor" width="18"><rect x="0" y="0" width="16" height="12" rx="2" stroke="currentColor" strokeWidth="1.5" fill="none"/><rect x="3" y="3" width="8" height="6" rx="1" fill="currentColor"/><path d="M17 4v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
@@ -102,8 +102,8 @@ export default function ConsultationPage() {
                     <p>体調お変わりないが血圧94/46と平常値より低め、脈37回で実測中のリズム不整なし。</p>
                     <p>再検するが38回。</p>
                     <p>胸部症状や息切れ、眩暈等の自覚症状なし…</p>
-                    <span className="chat-bubble-time">14:05</span>
                   </div>
+                  <span className="chat-bubble-time">10:05</span>
                 </div>
 
                 {/* Client Message 2 */}
@@ -111,8 +111,8 @@ export default function ConsultationPage() {
                   <div className="chat-bubble chat-bubble-client">
                     <p>下記の投薬で、調整した方がよいものはありますか？</p>
                     <p>また今後の対応はどうすればよいですか？</p>
-                    <span className="chat-bubble-time">14:08</span>
                   </div>
+                  <span className="chat-bubble-time">10:08</span>
                 </div>
 
                 {/* MEC Response */}
@@ -123,8 +123,8 @@ export default function ConsultationPage() {
                     <p>ご相談ありがとうございます。</p>
                     <p>まず心電図で、高度房室ブロックへの移行がないかを確認する事をご検討いただき、</p>
                     <p>その上で下記の投薬調整はいかがでしょうか。…</p>
-                    <span className="chat-bubble-time">15:32</span>
                   </div>
+                  <span className="chat-bubble-time">10:30</span>
                 </div>
               </div>
 

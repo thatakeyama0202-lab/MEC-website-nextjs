@@ -1850,9 +1850,10 @@ a.contact-detail-value:hover { color: var(--color-accent); }
 }
 
 /* Chat Bubbles */
-.chat-msg { display: flex; gap: 6px; }
-.chat-msg-client { justify-content: flex-end; }
-.chat-msg-mec { justify-content: flex-start; align-items: flex-end; }
+.chat-msg { display: flex; flex-direction: column; gap: 2px; }
+.chat-msg-client { align-items: flex-end; }
+.chat-msg-mec { align-items: flex-start; flex-direction: row; flex-wrap: wrap; gap: 6px; }
+.chat-msg-mec .chat-bubble-time { width: 100%; padding-left: 34px; }
 
 .chat-bubble {
     max-width: 85%;
@@ -1893,10 +1894,15 @@ a.contact-detail-value:hover { color: var(--color-accent); }
 
 .chat-bubble-time {
     display: block;
-    text-align: right;
     font-size: 0.65rem;
     color: #8696a0;
-    margin-top: 4px;
+    margin-top: 2px;
+}
+.chat-msg-client .chat-bubble-time {
+    text-align: right;
+}
+.chat-msg-mec .chat-bubble-time {
+    text-align: left;
 }
 
 .chat-avatar-mec {
