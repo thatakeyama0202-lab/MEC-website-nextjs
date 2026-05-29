@@ -7,7 +7,8 @@ import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "ホーム" },
-  { href: "/service", label: "サービス詳細" },
+  { href: "/service", label: "超音波検査支援" },
+  { href: "/consultation", label: "専門医コンサル" },
   { href: "/company", label: "会社概要" },
   { href: "/greeting", label: "代表挨拶" },
   { href: "/news", label: "お知らせ・実績" },

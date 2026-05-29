@@ -139,8 +139,9 @@ export default function Home() {
               <p>クリニックDr⇄専門医で臨床的疑問等を相談できるプラットフォームを付帯。循環器内科の他、精神科・脳神経内科・産婦人科にも対応。</p>
             </div>
           </div>
-          <div className="section-cta-link">
-            <Link href="/service" className="btn btn-primary">サービスの詳細を見る</Link>
+          <div className="section-cta-link dual">
+            <Link href="/service" className="btn btn-primary">超音波検査支援の詳細</Link>
+            <Link href="/consultation" className="btn btn-outline">専門医コンサルの詳細</Link>
           </div>
         </div>
       </section>

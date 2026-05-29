@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "サービス詳細",
+  title: "超音波検査支援サービス",
 };
 
 export default function ServicePage() {
@@ -10,8 +10,8 @@ export default function ServicePage() {
     <>
       <section className="page-hero">
         <div className="container">
-          <p className="page-hero-label">Service Details</p>
-          <h1 className="page-hero-title">サービス詳細</h1>
+          <p className="page-hero-label">Ultrasound Support Service</p>
+          <h1 className="page-hero-title">超音波検査支援サービス</h1>
         </div>
       </section>
 
@@ -22,41 +22,8 @@ export default function ServicePage() {
             <p className="section-label">Overview</p>
             <h2 className="section-title">サービス概要</h2>
           </div>
-          <p className="overview-lead">透析クリニック様・在宅診療クリニック様へ、<br className="pc-only" />2つの専門サービスをご提供いたします。</p>
-          <div className="overview-hero-grid">
-            <div className="overview-hero-card">
-              <div className="overview-hero-icon">
-                <svg viewBox="0 0 56 56" fill="none">
-                  <circle cx="28" cy="28" r="26" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M22 28c0-3.314 2.686-6 6-6s6 2.686 6 6" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M18 28c0-5.523 4.477-10 10-10s10 4.477 10 10" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M14 28c0-7.732 6.268-14 14-14s14 6.268 14 14" stroke="currentColor" strokeWidth="1.5"/>
-                  <circle cx="28" cy="28" r="2.5" fill="currentColor"/>
-                  <path d="M28 32v8" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <div className="overview-hero-label">Service 01</div>
-              <h3 className="overview-hero-title">超音波検査の<br />支援サービス</h3>
-              <p className="overview-hero-desc">心エコー・血管エコーの撮影から、循環器専門医による読影・臨床的助言まで、検査業務を包括的に支援します。</p>
-            </div>
-            <div className="overview-hero-divider">
-              <span></span>
-            </div>
-            <div className="overview-hero-card">
-              <div className="overview-hero-icon">
-                <svg viewBox="0 0 56 56" fill="none">
-                  <rect x="8" y="10" width="40" height="28" rx="4" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M8 18h40" stroke="currentColor" strokeWidth="1.5"/>
-                  <circle cx="20" cy="30" r="5" stroke="currentColor" strokeWidth="1.5"/>
-                  <circle cx="36" cy="30" r="5" stroke="currentColor" strokeWidth="1.5"/>
-                  <path d="M25 30h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                  <path d="M22 44l6-6M34 44l-6-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/>
-                </svg>
-              </div>
-              <div className="overview-hero-label">Service 02</div>
-              <h3 className="overview-hero-title">オンライン専門医<br />コンサルテーション</h3>
-              <p className="overview-hero-desc">循環器内科をはじめ、精神科・脳神経内科・産婦人科の専門医に、日々の臨床上の疑問をオンラインで相談できます。</p>
-            </div>
+          <div className="overview-intro">
+            <p>透析クリニック様・在宅診療クリニック様を対象に、心エコー・血管エコーの撮影から、循環器専門医（日本循環器学会認定）による読影・臨床的助言まで、超音波検査業務を包括的に支援いたします。</p>
           </div>
           <div className="overview-cards">
             <div className="overview-card">
@@ -75,10 +42,10 @@ export default function ServicePage() {
             </div>
             <div className="overview-card">
               <div className="overview-card-icon">
-                <svg viewBox="0 0 48 48" fill="none"><path d="M8 12a4 4 0 014-4h24a4 4 0 014 4v18a4 4 0 01-4 4H20l-8 6V34a4 4 0 01-4-4V12z" stroke="currentColor" strokeWidth="1.5"/><path d="M16 18h16M16 24h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                <svg viewBox="0 0 48 48" fill="none"><path d="M12 8h24a4 4 0 014 4v20a4 4 0 01-4 4H12a4 4 0 01-4-4V12a4 4 0 014-4z" stroke="currentColor" strokeWidth="1.5"/><path d="M16 20h16M16 26h10M16 32h6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M32 14l4-4M32 14h4M32 14v4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
               </div>
-              <h3>オンライン相談</h3>
-              <p>クリニックDr⇄専門医で臨床的疑問等を相談できるプラットフォームを付帯。循環器内科の他、精神科・脳神経内科・産婦人科にも対応。</p>
+              <h3>臨床的アドバイス</h3>
+              <p>検査結果を臨床判断にどう活かすかという評価・助言まで一貫して提供します。</p>
             </div>
           </div>
         </div>
@@ -233,12 +200,6 @@ export default function ServicePage() {
           <div className="operation-example">
             <p>例）超音波検査撮影、画像解析、レポート作成、その他超音波検査に関連する業務全般の支援をいたします。</p>
           </div>
-          <div className="operation-notice">
-            <div className="operation-notice-icon">
-              <svg viewBox="0 0 24 24" fill="none"><path d="M8 12a4 4 0 014-4h0a4 4 0 014 4v1a4 4 0 01-4 4h0a4 4 0 01-4-4v-1z" stroke="currentColor" strokeWidth="1.5"/><path d="M16 18h16M16 24h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M4 6a2 2 0 012-2h12a2 2 0 012 2v10a2 2 0 01-2 2H10l-4 3v-3a2 2 0 01-2-2V6z" stroke="currentColor" strokeWidth="1.5"/><path d="M8 9h8M8 12h5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
-            </div>
-            <p className="operation-notice-text"><strong>オンライン専門医相談サービスのみ</strong>のご利用も可能です</p>
-          </div>
         </div>
       </section>
 
@@ -268,6 +229,20 @@ export default function ServicePage() {
               <div className="detail-highlight">
                 <p>ご契約内容やオーダー件数によっては、クリニック様のご負担を抑えられるよう料金設計をご相談させていただきます。実際のご負担額は、件数・作業時間等の条件に応じて個別にお見積りいたします。</p>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* OTHER SERVICE */}
+      <section className="section">
+        <div className="container">
+          <div className="other-service-banner">
+            <div className="other-service-content">
+              <p className="other-service-label">Another Service</p>
+              <h3 className="other-service-title">オンライン専門医コンサルテーションサービス</h3>
+              <p className="other-service-desc">循環器内科をはじめ、精神科・脳神経内科・産婦人科の専門医に、日々の臨床上の疑問をオンラインで相談できるサービスです。</p>
+              <Link href="/consultation" className="btn btn-white">詳細を見る</Link>
             </div>
           </div>
         </div>
