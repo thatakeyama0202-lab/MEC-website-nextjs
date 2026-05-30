@@ -2563,6 +2563,18 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     color: var(--color-accent);
 }
 
+.exam-card-icon-heart {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.exam-card-icon-heart span {
+    font-size: 48px;
+    line-height: 1;
+    color: #dc2626;
+}
+
 .exam-card-title {
     font-size: 1.1rem;
     font-weight: 700;

@@ -98,8 +98,8 @@ export default function ServicePage() {
           </div>
           <div className="exam-grid">
             <div className="exam-card">
-              <div className="exam-card-icon">
-                <svg viewBox="0 0 56 56" fill="none"><path d="M28 10c-1.5 0-3 1.2-4.5 3.5C21.5 16.5 18 22 18 27c0 5.5 4.5 10 10 10s10-4.5 10-10c0-5-3.5-10.5-5.5-13.5C31 11.2 29.5 10 28 10z" stroke="currentColor" strokeWidth="1.5"/><path d="M22 26c1.5-2 3.5-3 6-3s4.5 1 6 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M24.5 31c1-1 2.2-1.5 3.5-1.5s2.5.5 3.5 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M28 17v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M25 19l3 4 3-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
+              <div className="exam-card-icon exam-card-icon-heart">
+                <span>&#9829;</span>
               </div>
               <h3 className="exam-card-title">心エコー</h3>
               <p className="exam-card-target">心筋症、弁膜症</p>
