@@ -25,7 +25,7 @@ export default function CompanyPage() {
           <div className="philosophy-inner">
             <div className="philosophy-card">
               <p className="philosophy-main">心血管エコー検査と専門医の知見を、<br className="pc-only" />すべての医療現場へ届ける。</p>
-              <p className="philosophy-sub">透析クリニック様や訪問診療クリニック様が抱える循環器領域の課題に、専門的な検査と評価で寄り添い、患者様・クリニック・高次機能病院の三者が共に良い結果を得られる医療を実現します。</p>
+              <p className="philosophy-sub">透析クリニック様や訪問診療クリニック様が抱える<br className="pc-only" />循環器領域の課題に、専門的な検査と評価で寄り添い、<br className="pc-only" />患者様・クリニック・高次機能病院の三者が<br className="pc-only" />共に良い結果を得られる医療を実現します。</p>
             </div>
           </div>
         </div>

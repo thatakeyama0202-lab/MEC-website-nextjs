@@ -24,7 +24,7 @@ export default function ServicePage() {
             <h2 className="section-title">循環器エコー検査の「撮影」と「解釈」、<br className="pc-only" />まとめて支援します</h2>
           </div>
           <div className="svc-intro">
-            <p>透析・在宅医療の現場では、心臓・血管の評価が欠かせません。<br />一方で心血管エコーには、二つのハードルがあります。</p>
+            <p>透析・在宅医療の現場では、<br className="pc-only" />心臓・血管の評価が欠かせません。<br />一方で心血管エコーには、二つのハードルがあります。</p>
             <div className="svc-hurdles">
               <div className="svc-hurdle">
                 <div className="svc-hurdle-num">1</div>
@@ -35,7 +35,7 @@ export default function ServicePage() {
                 <p>臨床に活かすための<strong>読影・解釈が難しい</strong></p>
               </div>
             </div>
-            <p className="svc-intro-emphasis">Medical Echo Consulting（MEC）は、この<strong>撮影と解釈の両方</strong>を、<br className="pc-only" />検査技師と循環器専門医がチームでまとめて支援します。</p>
+            <p className="svc-intro-emphasis">Medical Echo Consulting（MEC）は、<br className="pc-only" />この<strong>撮影と解釈の両方</strong>を、<br />検査技師と循環器専門医がチームで<br className="pc-only" />まとめて支援します。</p>
           </div>
         </div>
       </section>
@@ -165,7 +165,7 @@ export default function ServicePage() {
             </div>
             <div className="svc-notice-content">
               <h4>ご留意事項</h4>
-              <p>本サービスは、主治医の診療を補助する検査支援サービスです。診察・診断を行うものではなく、最終的な診断および治療方針の決定は主治医が行います。</p>
+              <p>本サービスは、主治医の診療を補助する検査支援サービスです。<br className="pc-only" />診察・診断を行うものではなく、最終的な診断および治療方針の決定は主治医が行います。</p>
             </div>
           </div>
         </div>

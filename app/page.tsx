@@ -76,13 +76,13 @@ export default function Home() {
               </div>
             </div>
             <div className="problem-text">
-              <p>しかし、心血管エコー検査は専門性が高く、「検査」も「専門的判断」も敷居が高いのが現状です。</p>
-              <p>専門病院への紹介は「こんな症状で紹介してよいのか」「紹介したいが、どのような内容で紹介したらよいか迷う」といった、紹介元の敷居の高さや、透析中・在宅療養中の患者様にとって大きな負担となりうる等、様々な課題があります。</p>
+              <p>しかし、心血管エコー検査は専門性が高く、<br className="pc-only" />「検査」も「専門的判断」も敷居が高いのが現状です。</p>
+              <p>専門病院への紹介は<br className="pc-only" />「こんな症状で紹介してよいのか」<br className="pc-only" />「紹介したいが、どのような内容で紹介したらよいか迷う」<br className="pc-only" />といった紹介元の敷居の高さや、<br className="pc-only" />透析中・在宅療養中の患者様にとって<br className="pc-only" />大きな負担となりうる等、様々な課題があります。</p>
             </div>
             <div className="problem-solution">
               <div className="solution-badge">MECの役割</div>
               <h3 className="solution-title">MECは、その&ldquo;敷居&rdquo;を下げるサービスです。</h3>
-              <p className="solution-desc"><strong>MEC（Medical Echo Consulting）</strong>は、循環器専門医・心エコー認証医が運営する、透析医院・訪問診療クリニック様向けの医療パートナーサービスです。</p>
+              <p className="solution-desc"><strong>MEC（Medical Echo Consulting）</strong>は、<br className="pc-only" />循環器専門医・心エコー認証医が運営する、<br className="pc-only" />透析医院・訪問診療クリニック様向けの医療パートナーサービスです。</p>
             </div>
           </div>
         </div>
@@ -149,7 +149,7 @@ export default function Home() {
                 <svg viewBox="0 0 48 48" fill="none"><path d="M8 12a4 4 0 014-4h24a4 4 0 014 4v18a4 4 0 01-4 4H20l-8 6V34a4 4 0 01-4-4V12z" stroke="currentColor" strokeWidth="1.5"/><path d="M16 18h16M16 24h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
               </div>
               <h3>オンライン相談</h3>
-              <p>クリニックDr⇄専門医で臨床的疑問等を相談できるプラットフォームを付帯。循環器内科の他、精神科・脳神経内科・産婦人科にも対応。</p>
+              <p>クリニックDr⇄専門医で臨床的疑問等を相談できるプラットフォームを付帯。<br />循環器内科の他、精神科・脳神経内科・産婦人科にも対応。</p>
             </div>
           </div>
           <div className="section-cta-link dual">

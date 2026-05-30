@@ -23,7 +23,7 @@ export default function ConsultationPage() {
             <h2 className="section-title">サービス概要</h2>
           </div>
           <div className="overview-intro">
-            <p>日々の診療で生じる臨床上の疑問——投薬調整、検査結果の解釈、紹介のタイミングなど——を、チャット形式で専門医に気軽に相談できるサービスです。</p>
+            <p>日々の診療で生じる臨床上の疑問——<br className="pc-only" />投薬調整、検査結果の解釈、紹介のタイミングなど——を、<br className="pc-only" />チャット形式で専門医に気軽に相談できるサービスです。</p>
           </div>
 
           <div className="consult-unlimited">
@@ -176,7 +176,7 @@ export default function ConsultationPage() {
                 </div>
                 <div className="consult-dept-group">
                   <h4>2. 心電図読影（12誘導心電図、ホルター心電図）</h4>
-                  <p>写真やPDFをチャットに送付 → 翌営業日までに所見（カルテにそのまま貼付できるもの）をつけてご返信。</p>
+                  <p>写真やPDFをチャットに送付 →<br className="pc-only" />翌営業日までに所見（カルテにそのまま貼付できるもの）をつけてご返信。</p>
                   <p className="consult-dept-note">クライアント様自院で撮影したエコー画像の解析も承ります（別途相談）</p>
                 </div>
               </div>

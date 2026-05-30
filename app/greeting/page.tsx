@@ -23,8 +23,8 @@ export default function GreetingPage() {
               <div className="greeting-role">CEO</div>
               <h3 className="greeting-name">畠山 翔翼<span className="greeting-ruby">（はたけやま つばさ）</span></h3>
               <div className="greeting-body">
-                <p>循環器内科医として、岩手県立中央病院や榊原記念病院で、急性期から亜急性期病院での診療に従事してまいりました。</p>
-                <p>臨床現場で抱いた問題意識を、自身の専門分野を活かして解決できると考え、主に透析クリニック様・在宅クリニック様へ向けた</p>
+                <p>循環器内科医として、岩手県立中央病院や榊原記念病院で、<br className="pc-only" />急性期から亜急性期病院での診療に従事してまいりました。</p>
+                <p>臨床現場で抱いた問題意識を、<br className="pc-only" />自身の専門分野を活かして解決できると考え、<br className="pc-only" />主に透析クリニック様・在宅クリニック様へ向けた</p>
                 <ul className="greeting-services">
                   <li>心・血管領域 超音波検査支援</li>
                   <li>オンライン専門医相談</li>
