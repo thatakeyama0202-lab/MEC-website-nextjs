@@ -30,6 +30,7 @@ export default function GreetingPage() {
                   <li>オンライン専門医相談</li>
                 </ul>
                 <p>をご提供するサービスの立ち上げに至りました。</p>
+                <p>心血管疾患への介入を通じて、<br className="pc-only" />患者・クリニック・総合病院への&ldquo;三方良し&rdquo;を実現してまいります。</p>
                 <p>何卒よろしくお願い申し上げます。</p>
               </div>
             </div>
