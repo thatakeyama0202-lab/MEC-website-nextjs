@@ -61,9 +61,21 @@ export default function Home() {
       <section className="section problem-section">
         <div className="container">
           <div className="problem-content">
+            <div className="problem-facts">
+              <div className="problem-fact-card">
+                <div className="problem-fact-icon">
+                  <svg viewBox="0 0 64 64" fill="none"><path d="M32 12c-6 0-12 8-12 18s12 22 12 22 12-12 12-22-6-18-12-18z" stroke="currentColor" strokeWidth="2"/><path d="M26 28h12M32 22v12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/></svg>
+                </div>
+                <p className="problem-fact-text"><strong>透析患者様の死因</strong>の<br />おおよそ<span className="fact-number">半数</span>は<br />心血管疾患</p>
+              </div>
+              <div className="problem-fact-card">
+                <div className="problem-fact-icon">
+                  <svg viewBox="0 0 64 64" fill="none"><circle cx="32" cy="20" r="10" stroke="currentColor" strokeWidth="2"/><path d="M14 52c0-9.941 8.059-18 18-18s18 8.059 18 18" stroke="currentColor" strokeWidth="2"/><path d="M38 16l6-4M44 18l-2-6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                </div>
+                <p className="problem-fact-text"><strong>高齢者</strong>は<br />何らかの<span className="fact-number">心疾患</span>を<br />抱えている事が多い</p>
+              </div>
+            </div>
             <div className="problem-text">
-              <p>透析クリニックにも、訪問診療の現場にも、心不全や心血管疾患を抱える患者様が数多くいらっしゃいます。</p>
-              <p className="problem-highlight"><strong>透析患者様の死因のおよそ半数</strong>は心血管疾患。</p>
               <p>しかし、心血管エコー検査は専門性が高く、「検査」も「専門的判断」も敷居が高いのが現状です。かといって専門病院への紹介は、透析中・在宅療養中の患者様にとって大きな負担となります。</p>
             </div>
             <div className="problem-solution">

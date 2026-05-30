@@ -68,6 +68,56 @@ export default function GreetingPage() {
         </div>
       </section>
 
+      {/* BACKGROUND STORY */}
+      <section className="section story-compact-section">
+        <div className="container">
+          <div className="section-header">
+            <p className="section-label">Background</p>
+            <h2 className="section-title">事業立ち上げの経緯</h2>
+          </div>
+
+          <div className="story-compact-grid">
+            <div className="story-compact-card">
+              <div className="story-compact-num">01</div>
+              <h4 className="story-compact-heading">現場で見た課題</h4>
+              <p>急性期病院での勤務を通じ、透析・在宅クリニックから重症心血管疾患患者様が多数搬送される現状を認識。弁膜症・狭心症に起因する心不全等が重症化し、治療に難渋する事例が多々ありました。</p>
+              <div className="story-compact-impact">
+                <span>患者様：QOLの低下</span>
+                <span>クリニック：通院終了・関係悪化</span>
+                <span>高次病院：リソース不足</span>
+              </div>
+            </div>
+
+            <div className="story-compact-card">
+              <div className="story-compact-num">02</div>
+              <h4 className="story-compact-heading">なぜこのようなことに？</h4>
+              <p>ハイリスク患者に対する適切な評価・介入がなされていないことが主因。</p>
+              <div className="story-compact-causes">
+                <span>エコー検査ができていない</span>
+                <span>専門医へ気軽に相談できる場がない</span>
+              </div>
+            </div>
+
+            <div className="story-compact-card">
+              <div className="story-compact-num">03</div>
+              <h4 className="story-compact-heading">心血管エコー検査の&ldquo;壁&rdquo;</h4>
+              <p>心エコー検査は測定項目が多岐にわたり、結果の評価も複雑。非専門医の先生方が循環器の専門知識を一から学び直すのは困難であり、心血管エコー検査が敬遠されがちです。</p>
+            </div>
+
+            <div className="story-compact-card">
+              <div className="story-compact-num">04</div>
+              <h4 className="story-compact-heading">エコーの強みと解決への道筋</h4>
+              <p>機械・撮影できる人・評価できる人がいれば、場所を選ばず質の高いサービスが提供可能。直接機材を持ち込み、検査技師が撮影、専門医が評価する場を設けることで解決を目指します。</p>
+              <div className="story-compact-vision">
+                <span>患者様：早期の専門的評価</span>
+                <span>クリニック：継続的フォロー支援</span>
+                <span>高次病院：円滑な連携</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="section cta">
         <div className="container">
