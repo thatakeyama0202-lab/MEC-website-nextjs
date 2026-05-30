@@ -11,8 +11,7 @@ export default function Footer() {
           </div>
           <nav className="footer-nav">
             <Link href="/">ホーム</Link>
-            <Link href="/service">超音波検査支援</Link>
-            <Link href="/consultation">専門医コンサル</Link>
+            <Link href="/services">サービス詳細</Link>
             <Link href="/company">会社概要</Link>
             <Link href="/greeting">代表挨拶</Link>
             <Link href="/news">お知らせ・実績</Link>

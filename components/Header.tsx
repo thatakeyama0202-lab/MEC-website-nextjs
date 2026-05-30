@@ -7,8 +7,7 @@ import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "ホーム" },
-  { href: "/service", label: "超音波検査支援" },
-  { href: "/consultation", label: "専門医コンサル" },
+  { href: "/services", label: "サービス詳細" },
   { href: "/company", label: "会社概要" },
   { href: "/greeting", label: "代表挨拶" },
   { href: "/news", label: "お知らせ・実績" },
@@ -48,7 +47,7 @@ export default function Header() {
             <Link
               key={item.href}
               href={item.href}
-              className={`nav-link${pathname === item.href ? " active" : ""}`}
+              className={`nav-link${pathname === item.href || (item.href === "/services" && (pathname === "/service" || pathname === "/consultation")) ? " active" : ""}`}
               onClick={() => setMenuOpen(false)}
             >
               {item.label}

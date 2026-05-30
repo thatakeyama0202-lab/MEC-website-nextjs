@@ -2622,6 +2622,91 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     line-height: 1.9;
 }
 
+/* ===== Services Select Page ===== */
+.services-select {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.service-select-card {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 40px 36px;
+    transition: var(--transition);
+    text-decoration: none;
+    color: inherit;
+}
+
+.service-select-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 12px 40px rgba(37, 99, 235, 0.1);
+    transform: translateY(-3px);
+}
+
+.service-select-icon {
+    flex-shrink: 0;
+    width: 64px;
+    height: 64px;
+    color: var(--color-accent);
+}
+
+.service-select-content {
+    flex: 1;
+}
+
+.service-select-label {
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--color-accent);
+    margin-bottom: 6px;
+}
+
+.service-select-title {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 12px;
+}
+
+.service-select-desc {
+    font-size: 0.88rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    margin-bottom: 16px;
+}
+
+.service-select-btn {
+    display: inline-block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--color-accent);
+    transition: var(--transition);
+}
+
+.service-select-card:hover .service-select-btn {
+    letter-spacing: 0.05em;
+}
+
+@media (max-width: 768px) {
+    .service-select-card {
+        flex-direction: column;
+        text-align: center;
+        padding: 32px 24px;
+        gap: 20px;
+    }
+    .service-select-icon { width: 48px; height: 48px; }
+    .service-select-title { font-size: 1.15rem; }
+}
+
 /* ===== Service Page – Redesign ===== */
 
 /* Hero catch copy */

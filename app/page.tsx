@@ -17,7 +17,7 @@ export default function Home() {
             循環器専門医パートナーサービスです。
           </p>
           <div className="hero-actions">
-            <Link href="/service" className="btn btn-primary">サービス詳細を見る</Link>
+            <Link href="/services" className="btn btn-primary">サービス詳細を見る</Link>
             <Link href="/contact" className="btn btn-outline">お問い合わせ</Link>
           </div>
         </div>
@@ -152,9 +152,8 @@ export default function Home() {
               <p>クリニックDr⇄専門医で臨床的疑問等を相談できるプラットフォームを付帯。<br />循環器内科の他、精神科・脳神経内科・産婦人科にも対応。</p>
             </div>
           </div>
-          <div className="section-cta-link dual">
-            <Link href="/service" className="btn btn-primary">超音波検査支援の詳細</Link>
-            <Link href="/consultation" className="btn btn-outline">専門医コンサルの詳細</Link>
+          <div className="section-cta-link">
+            <Link href="/services" className="btn btn-primary">サービスの詳細を見る</Link>
           </div>
         </div>
       </section>
