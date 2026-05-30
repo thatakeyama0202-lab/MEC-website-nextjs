@@ -2159,6 +2159,58 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     margin-top: 8px;
 }
 
+/* Consultation details – stacked layout */
+.consult-details-stack {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.consult-detail-row {
+    padding: 28px 0;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.consult-detail-row:first-child {
+    padding-top: 0;
+}
+
+.consult-detail-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.consult-detail-text {
+    font-size: 0.92rem;
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.consult-standalone-note {
+    max-width: 800px;
+    margin: 32px auto 0;
+    background: var(--color-accent-bg);
+    border: 2px solid var(--color-accent);
+    border-radius: 12px;
+    padding: 24px 28px;
+    text-align: center;
+}
+
+.consult-standalone-note p {
+    font-size: 1rem;
+    color: var(--color-text);
+    line-height: 1.8;
+}
+
+.consult-standalone-note strong {
+    color: var(--color-accent-dark);
+    font-size: 1.05rem;
+}
+
 /* Other Service Banner */
 .other-service-banner {
     background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);

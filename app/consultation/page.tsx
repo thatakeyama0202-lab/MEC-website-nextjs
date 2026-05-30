@@ -226,20 +226,18 @@ export default function ConsultationPage() {
       {/* DETAILS */}
       <section className="section details-section">
         <div className="container">
-          <div className="details-grid">
-            <div className="detail-card">
-              <h3 className="detail-heading">ご利用方法</h3>
-              <p className="detail-sub">チャットツール（LINE・Google Chat等）を通じて、テキストベースでご相談いただけます。画像の添付も可能です。</p>
+          <div className="consult-details-stack">
+            <div className="consult-detail-row">
+              <h3 className="consult-detail-title">ご利用方法</h3>
+              <p className="consult-detail-text">チャットツール（LINE・Google Chat等）を通じて、テキストベースでご相談いただけます。画像の添付も可能です。</p>
             </div>
-            <div className="detail-card">
-              <h3 className="detail-heading">ご契約形態</h3>
-              <p className="detail-value">月額制</p>
-              <p className="detail-sub">ご利用頻度・対応科目に応じて、個別にお見積りいたします。</p>
+            <div className="consult-detail-row">
+              <h3 className="consult-detail-title">ご契約形態</h3>
+              <p className="consult-detail-text"><strong>月額制</strong> — ご利用頻度・対応科目に応じて、個別にお見積りいたします。</p>
             </div>
-            <div className="detail-card">
-              <h3 className="detail-heading">単独利用</h3>
-              <p className="detail-sub">超音波検査支援サービスとのセットだけでなく、<strong>オンライン専門医相談サービスのみ</strong>のご利用も可能です。</p>
-            </div>
+          </div>
+          <div className="consult-standalone-note">
+            <p>超音波検査支援サービスとのセットだけでなく、<strong>オンライン専門医相談サービスのみ</strong>のご利用も可能です。</p>
           </div>
         </div>
       </section>
