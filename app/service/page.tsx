@@ -24,7 +24,17 @@ export default function ServicePage() {
             <h2 className="section-title">循環器エコー検査の「撮影」と「解釈」、<br className="pc-only" />まとめて支援します</h2>
           </div>
           <div className="svc-intro">
-            <p>透析・在宅医療の現場では、心臓・血管の評価が欠かせません。一方で心血管エコーには、「質の高い撮影に技術を要する」「臨床に活かすための読影・解釈が難しい」という二つのハードルがあります。</p>
+            <p>透析・在宅医療の現場では、心臓・血管の評価が欠かせません。<br />一方で心血管エコーには、二つのハードルがあります。</p>
+            <div className="svc-hurdles">
+              <div className="svc-hurdle">
+                <div className="svc-hurdle-num">1</div>
+                <p>質の高い撮影に<strong>技術を要する</strong></p>
+              </div>
+              <div className="svc-hurdle">
+                <div className="svc-hurdle-num">2</div>
+                <p>臨床に活かすための<strong>読影・解釈が難しい</strong></p>
+              </div>
+            </div>
             <p className="svc-intro-emphasis">Medical Echo Consulting（MEC）は、この<strong>撮影と解釈の両方</strong>を、<br className="pc-only" />検査技師と循環器専門医がチームでまとめて支援します。</p>
           </div>
         </div>
@@ -89,28 +99,28 @@ export default function ServicePage() {
           <div className="exam-grid">
             <div className="exam-card">
               <div className="exam-card-icon">
-                <svg viewBox="0 0 56 56" fill="none"><path d="M28 8c-5 0-10 7-10 16s10 20 10 20 10-11 10-20S33 8 28 8z" stroke="currentColor" strokeWidth="1.5"/><path d="M22 22h12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M28 16v12" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                <svg viewBox="0 0 56 56" fill="none"><path d="M28 10c-1.5 0-3 1.2-4.5 3.5C21.5 16.5 18 22 18 27c0 5.5 4.5 10 10 10s10-4.5 10-10c0-5-3.5-10.5-5.5-13.5C31 11.2 29.5 10 28 10z" stroke="currentColor" strokeWidth="1.5"/><path d="M22 26c1.5-2 3.5-3 6-3s4.5 1 6 3" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M24.5 31c1-1 2.2-1.5 3.5-1.5s2.5.5 3.5 1.5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M28 17v6" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M25 19l3 4 3-4" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
               </div>
               <h3 className="exam-card-title">心エコー</h3>
               <p className="exam-card-target">心筋症、弁膜症</p>
             </div>
             <div className="exam-card">
               <div className="exam-card-icon">
-                <svg viewBox="0 0 56 56" fill="none"><path d="M20 12v32M36 12v32" stroke="currentColor" strokeWidth="1.5"/><path d="M20 20h16M20 36h16" stroke="currentColor" strokeWidth="1.5"/><circle cx="28" cy="28" r="14" stroke="currentColor" strokeWidth="1.5"/></svg>
+                <svg viewBox="0 0 56 56" fill="none"><ellipse cx="28" cy="14" rx="10" ry="12" stroke="currentColor" strokeWidth="1.5"/><path d="M22 24c-2 3-4 8-4 14v6h20v-6c0-6-2-11-4-14" stroke="currentColor" strokeWidth="1.5"/><path d="M24 18v16M32 18v16" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeDasharray="2 3"/><path d="M18 34h20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
               </div>
               <h3 className="exam-card-title">頸動脈エコー</h3>
               <p className="exam-card-target">頸動脈狭窄症</p>
             </div>
             <div className="exam-card">
               <div className="exam-card-icon">
-                <svg viewBox="0 0 56 56" fill="none"><path d="M28 8v40" stroke="currentColor" strokeWidth="1.5"/><path d="M20 18c0 4 8 8 8 16M36 18c0 4-8 8-8 16" stroke="currentColor" strokeWidth="1.5"/><path d="M18 44h20" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
+                <svg viewBox="0 0 56 56" fill="none"><path d="M24 6v10c0 2-1 4-3 6l-3 4c-1.5 2-2 4-2 6v14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M32 6v10c0 2 1 4 3 6l3 4c1.5 2 2 4 2 6v14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M16 46h10M30 46h10" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/><path d="M20 32h16" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeDasharray="2 3"/><ellipse cx="28" cy="42" rx="6" ry="2" stroke="currentColor" strokeWidth="1.2"/></svg>
               </div>
               <h3 className="exam-card-title">下肢動脈エコー</h3>
               <p className="exam-card-target">閉塞性動脈硬化症</p>
             </div>
             <div className="exam-card">
               <div className="exam-card-icon">
-                <svg viewBox="0 0 56 56" fill="none"><path d="M28 8v40" stroke="currentColor" strokeWidth="1.5"/><path d="M22 16c0 6 6 10 6 18M34 16c0 6-6 10-6 18" stroke="currentColor" strokeWidth="1.5"/><circle cx="28" cy="40" r="4" stroke="currentColor" strokeWidth="1.5"/></svg>
+                <svg viewBox="0 0 56 56" fill="none"><path d="M28 6v44" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/><path d="M28 12c4 2 6 6 6 10s-6 8-6 12" stroke="currentColor" strokeWidth="1.5"/><path d="M28 12c-4 2-6 6-6 10s6 8 6 12" stroke="currentColor" strokeWidth="1.5"/><circle cx="28" cy="10" r="2.5" fill="currentColor"/><circle cx="34" cy="22" r="2" fill="currentColor" opacity="0.5"/><circle cx="22" cy="22" r="2" fill="currentColor" opacity="0.5"/><path d="M20 44h16" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round"/></svg>
               </div>
               <h3 className="exam-card-title">下肢静脈エコー</h3>
               <p className="exam-card-target">深部静脈血栓症</p>

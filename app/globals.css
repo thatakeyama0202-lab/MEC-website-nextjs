@@ -2418,6 +2418,50 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     margin-bottom: 16px;
 }
 
+/* Hurdles emphasis */
+.svc-hurdles {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 28px 0 32px;
+}
+
+.svc-hurdle {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    background: var(--color-danger-bg);
+    border: 1px solid rgba(220, 38, 38, 0.15);
+    border-radius: 12px;
+    padding: 20px 22px;
+}
+
+.svc-hurdle-num {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--color-danger);
+    color: #fff;
+    font-size: 0.85rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svc-hurdle p {
+    font-size: 0.95rem;
+    color: var(--color-text);
+    line-height: 1.6;
+    margin: 0 !important;
+}
+
+.svc-hurdle p strong {
+    color: var(--color-danger);
+    font-weight: 700;
+}
+
 .svc-intro-emphasis {
     font-size: 1.05rem !important;
     font-weight: 500;
@@ -2629,6 +2673,7 @@ a.contact-detail-value:hover { color: var(--color-accent); }
         margin: 8px 0;
     }
 
+    .svc-hurdles { grid-template-columns: 1fr; }
     .exam-grid { grid-template-columns: 1fr 1fr; }
     .merit-grid { grid-template-columns: 1fr; }
 
