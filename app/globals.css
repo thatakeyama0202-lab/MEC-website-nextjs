@@ -1832,7 +1832,7 @@ a.contact-detail-value:hover { color: var(--color-accent); }
 }
 
 .consult-unlimited-number {
-    display: block;
+    display: inline;
     font-size: 3rem;
     font-weight: 800;
     letter-spacing: 0.02em;
@@ -1847,7 +1847,7 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     font-size: 1.5rem;
     font-weight: 700;
     color: rgba(255,255,255,0.9);
-    margin-left: 2px;
+    margin-left: 4px;
 }
 
 .consult-unlimited-item p {
