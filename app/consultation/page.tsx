@@ -147,22 +147,64 @@ export default function ConsultationPage() {
             <p className="section-label">Departments</p>
             <h2 className="section-title">対応科目</h2>
           </div>
-          <div className="consult-departments">
-            <div className="consult-dept-card primary">
-              <h3>循環器内科</h3>
-              <p>心不全管理、投薬調整、心電図読影、紹介判断など</p>
+          <div className="consult-departments-detail">
+            <div className="consult-dept-detail primary">
+              <div className="consult-dept-header">
+                <h3>循環器内科</h3>
+              </div>
+              <div className="consult-dept-body">
+                <div className="consult-dept-group">
+                  <h4>1. 心疾患の管理・治療相談</h4>
+                  <ul>
+                    <li>心疾患患者の薬剤調整（新規開始、薬剤変更、中止検討）</li>
+                    <li>抗血小板薬・抗凝固薬の継続・調整。訪問歯科での抜歯や出血イベント時の継続可否</li>
+                    <li>浮腫に対する介入</li>
+                  </ul>
+                </div>
+                <div className="consult-dept-group">
+                  <h4>2. 心電図読影（12誘導心電図、ホルター心電図）</h4>
+                  <p>写真やPDFをチャットに送付 → 翌営業日までに所見（カルテにそのまま貼付できるもの）をつけてご返信。</p>
+                  <p className="consult-dept-note">クライアント様自院で撮影したエコー画像の解析も承ります（別途相談）</p>
+                </div>
+              </div>
             </div>
-            <div className="consult-dept-card">
-              <h3>精神科</h3>
-              <p>向精神薬の調整、せん妄対応など</p>
+
+            <div className="consult-dept-detail">
+              <div className="consult-dept-header">
+                <h3>脳神経内科</h3>
+              </div>
+              <div className="consult-dept-body">
+                <ul>
+                  <li>パーキンソニズムのマネジメント・薬剤調整</li>
+                  <li>パーキンソン病患者の投薬調整</li>
+                  <li>抗てんかん薬の減量・増量可否、投薬変更</li>
+                  <li>認知症治療薬の選定</li>
+                </ul>
+              </div>
             </div>
-            <div className="consult-dept-card">
-              <h3>脳神経内科</h3>
-              <p>認知症対応、神経症状の評価など</p>
+
+            <div className="consult-dept-detail">
+              <div className="consult-dept-header">
+                <h3>精神科</h3>
+              </div>
+              <div className="consult-dept-body">
+                <ul>
+                  <li>せん妄マネジメント</li>
+                  <li>抗うつ薬適応判断、薬剤選定・調整</li>
+                </ul>
+              </div>
             </div>
-            <div className="consult-dept-card">
-              <h3>産婦人科</h3>
-              <p>妊婦の循環器合併症管理など</p>
+
+            <div className="consult-dept-detail">
+              <div className="consult-dept-header">
+                <h3>産科・婦人科</h3>
+              </div>
+              <div className="consult-dept-body">
+                <ul>
+                  <li>婦人科系相談全般</li>
+                  <li>医療スタッフの産科・婦人科的悩み相談（妊娠中の悩み、更年期障害など）</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>

@@ -2007,6 +2007,108 @@ a.contact-detail-value:hover { color: var(--color-accent); }
 .consult-dept-card p { font-size: 0.82rem; color: var(--color-text-light); line-height: 1.6; }
 .consult-dept-card.primary p { color: rgba(255,255,255,0.7); }
 
+/* Dept Detail (expanded) */
+.consult-departments-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.consult-dept-detail {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 14px;
+    overflow: hidden;
+}
+
+.consult-dept-detail.primary {
+    border: 2px solid var(--color-accent);
+}
+
+.consult-dept-header {
+    padding: 18px 28px;
+    background: var(--color-bg-subtle);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.consult-dept-detail.primary .consult-dept-header {
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
+    border-bottom: none;
+}
+
+.consult-dept-header h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0;
+}
+
+.consult-dept-detail.primary .consult-dept-header h3 {
+    color: #fff;
+}
+
+.consult-dept-body {
+    padding: 24px 28px;
+}
+
+.consult-dept-group {
+    margin-bottom: 20px;
+}
+
+.consult-dept-group:last-child {
+    margin-bottom: 0;
+}
+
+.consult-dept-group h4 {
+    font-size: 0.92rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.consult-dept-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.consult-dept-body ul li {
+    position: relative;
+    padding-left: 18px;
+    font-size: 0.88rem;
+    color: var(--color-text);
+    line-height: 1.8;
+    margin-bottom: 6px;
+}
+
+.consult-dept-body ul li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 11px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--color-accent);
+}
+
+.consult-dept-body > p {
+    font-size: 0.88rem;
+    color: var(--color-text);
+    line-height: 1.8;
+    margin-bottom: 8px;
+}
+
+.consult-dept-note {
+    font-size: 0.82rem !important;
+    color: var(--color-text-light) !important;
+    background: var(--color-bg-subtle);
+    padding: 10px 14px;
+    border-radius: 8px;
+    margin-top: 8px;
+}
+
 /* Other Service Banner */
 .other-service-banner {
     background: linear-gradient(135deg, #1e3a5f 0%, #0f172a 100%);
@@ -2572,7 +2674,7 @@ a.contact-detail-value:hover { color: var(--color-accent); }
 .exam-card-icon-heart span {
     font-size: 48px;
     line-height: 1;
-    color: #dc2626;
+    color: var(--color-accent);
 }
 
 .exam-card-title {
