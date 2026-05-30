@@ -2393,3 +2393,244 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     border-radius: 6px;
     font-weight: 500;
 }
+
+/* ===== Service Page – Redesign ===== */
+
+/* Hero catch copy */
+.page-hero-catch {
+    font-size: 1.1rem;
+    color: rgba(255,255,255,0.88);
+    margin-top: 16px;
+    line-height: 1.9;
+    font-weight: 400;
+}
+
+/* Intro block */
+.svc-intro {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.svc-intro p {
+    font-size: 0.95rem;
+    line-height: 2.1;
+    color: var(--color-text);
+    margin-bottom: 16px;
+}
+
+.svc-intro-emphasis {
+    font-size: 1.05rem !important;
+    font-weight: 500;
+    color: var(--color-primary) !important;
+    background: var(--color-accent-bg);
+    border-left: 4px solid var(--color-accent);
+    border-radius: 0 12px 12px 0;
+    padding: 20px 24px;
+    margin-top: 24px;
+}
+
+/* Service Flow */
+.svc-flow-section {
+    background: var(--color-bg-subtle);
+}
+
+.svc-flow {
+    display: flex;
+    align-items: flex-start;
+    gap: 0;
+    justify-content: center;
+}
+
+.svc-flow-step {
+    flex: 1;
+    max-width: 220px;
+    text-align: center;
+}
+
+.svc-flow-num {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 14px;
+}
+
+.svc-flow-content h4 {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 6px;
+}
+
+.svc-flow-content p {
+    font-size: 0.8rem;
+    color: var(--color-text-light);
+    line-height: 1.6;
+}
+
+.svc-flow-arrow {
+    flex-shrink: 0;
+    width: 32px;
+    color: var(--color-accent);
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.svc-flow-arrow svg {
+    width: 24px;
+    height: 24px;
+}
+
+/* Exam Cards */
+.exam-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.exam-card {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 32px 20px;
+    text-align: center;
+    position: relative;
+    transition: var(--transition);
+}
+
+.exam-card:hover {
+    border-color: var(--color-accent);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.1);
+    transform: translateY(-2px);
+}
+
+.exam-card-icon {
+    width: 56px;
+    height: 56px;
+    margin: 0 auto 16px;
+    color: var(--color-accent);
+}
+
+.exam-card-title {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.exam-card-target {
+    display: inline-block;
+    font-size: 0.82rem;
+    color: var(--color-accent-dark);
+    background: var(--color-accent-bg);
+    padding: 5px 14px;
+    border-radius: 20px;
+    font-weight: 500;
+}
+
+/* Merit */
+.svc-merit-section {
+    background: var(--color-bg-subtle);
+}
+
+.merit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.merit-card {
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 16px;
+    padding: 32px 28px;
+    position: relative;
+}
+
+.merit-card-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 800;
+    color: var(--color-accent);
+    background: var(--color-accent-bg);
+    padding: 3px 12px;
+    border-radius: 20px;
+    letter-spacing: 0.05em;
+    margin-bottom: 14px;
+}
+
+.merit-card-title {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-bottom: 10px;
+}
+
+.merit-card p {
+    font-size: 0.88rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+/* Service Notice */
+.svc-notice {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+    background: var(--color-bg-subtle);
+    border: 1px solid var(--color-border);
+    border-radius: 12px;
+    padding: 24px 28px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.svc-notice-icon {
+    flex-shrink: 0;
+    width: 24px;
+    height: 24px;
+    color: var(--color-text-light);
+    margin-top: 2px;
+}
+
+.svc-notice-content h4 {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--color-text);
+    margin-bottom: 6px;
+}
+
+.svc-notice-content p {
+    font-size: 0.82rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+}
+
+/* Service page mobile */
+@media (max-width: 768px) {
+    .page-hero-catch { font-size: 0.95rem; }
+
+    .svc-flow {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .svc-flow-step { max-width: 100%; width: 100%; }
+    .svc-flow-arrow {
+        transform: rotate(90deg);
+        margin: 8px 0;
+    }
+
+    .exam-grid { grid-template-columns: 1fr 1fr; }
+    .merit-grid { grid-template-columns: 1fr; }
+
+    .svc-notice { flex-direction: column; gap: 10px; padding: 20px; }
+}
