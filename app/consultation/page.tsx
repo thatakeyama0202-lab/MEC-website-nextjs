@@ -26,6 +26,19 @@ export default function ConsultationPage() {
             <p>日々の診療で生じる臨床上の疑問——投薬調整、検査結果の解釈、紹介のタイミングなど——を、チャット形式で専門医に気軽に相談できるサービスです。</p>
           </div>
 
+          <div className="consult-unlimited">
+            <div className="consult-unlimited-item">
+              <span className="consult-unlimited-number">365</span>
+              <span className="consult-unlimited-unit">日</span>
+              <p>いつでも相談可能</p>
+            </div>
+            <div className="consult-unlimited-divider"></div>
+            <div className="consult-unlimited-item">
+              <span className="consult-unlimited-number">無制限</span>
+              <p>相談回数の上限なし</p>
+            </div>
+          </div>
+
           <div className="consult-features">
             <div className="consult-feature-card">
               <div className="consult-feature-icon">
