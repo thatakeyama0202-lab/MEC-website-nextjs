@@ -176,7 +176,8 @@ export default function ConsultationPage() {
                 </div>
                 <div className="consult-dept-group">
                   <h4>2. 心電図読影（12誘導心電図、ホルター心電図）</h4>
-                  <p>写真やPDFをチャットに送付 →<br className="pc-only" />翌営業日までに所見（カルテにそのまま貼付できるもの）をつけてご返信。</p>
+                  <p>写真やPDFをチャットに送付 →<br className="pc-only" />翌営業日までに所見をつけてご返信。</p>
+                  <p className="consult-dept-note">※個人情報に関わる部分は、マスキングしていただく必要があります</p>
                   <p className="consult-dept-note">クライアント様自院で撮影したエコー画像の解析も承ります（別途相談）</p>
                 </div>
               </div>
