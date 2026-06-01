@@ -37,6 +37,11 @@ export default function ConsultationPage() {
               <span className="consult-unlimited-number">無制限</span>
               <p>相談回数の上限なし</p>
             </div>
+            <div className="consult-unlimited-divider"></div>
+            <div className="consult-unlimited-item">
+              <span className="consult-unlimited-number">全員、専門医</span>
+              <p>相談を受ける医師は全員、<br />厚生労働省認定の専門医です。</p>
+            </div>
           </div>
 
           <div className="consult-features">
