@@ -12,26 +12,28 @@ export default function ContactPage() {
     setStatus("sending");
 
     const form = e.target as HTMLFormElement;
-    const data = {
-      company: (form.elements.namedItem("company") as HTMLInputElement).value,
-      name: (form.elements.namedItem("name") as HTMLInputElement).value,
-      email: (form.elements.namedItem("email") as HTMLInputElement).value,
-      subject: (form.elements.namedItem("subject") as HTMLSelectElement).value,
-      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    const subjectLabels: Record<string, string> = {
+      echo: "超音波検査支援サービスについて",
+      consult: "オンライン専門医相談について",
+      estimate: "お見積もり・料金について",
+      other: "その他",
     };
+    const subjectValue = (form.elements.namedItem("subject") as HTMLSelectElement).value;
+
+    const formData = new URLSearchParams();
+    formData.append("entry.1391354607", (form.elements.namedItem("company") as HTMLInputElement).value);
+    formData.append("entry.852642515", (form.elements.namedItem("name") as HTMLInputElement).value);
+    formData.append("entry.568930785", (form.elements.namedItem("email") as HTMLInputElement).value);
+    formData.append("entry.560699768", subjectLabels[subjectValue] || "");
+    formData.append("entry.1183172250", (form.elements.namedItem("message") as HTMLTextAreaElement).value);
 
     try {
-      const res = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(data),
-      });
-      if (res.ok) {
-        setStatus("sent");
-        form.reset();
-      } else {
-        setStatus("error");
-      }
+      await fetch(
+        "https://docs.google.com/forms/d/e/1FAIpQLScDBHLO_3x_lZCj1WPK7kuET883nzG5_B_EEKtEOUFrTS_VGA/formResponse",
+        { method: "POST", body: formData, mode: "no-cors" }
+      );
+      setStatus("sent");
+      form.reset();
     } catch {
       setStatus("error");
     }
