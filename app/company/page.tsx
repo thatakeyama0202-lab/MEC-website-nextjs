@@ -54,30 +54,6 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      {/* ACCESS */}
-      <section className="section access-section">
-        <div className="container">
-          <div className="section-header">
-            <p className="section-label">Access</p>
-            <h2 className="section-title">所在地</h2>
-          </div>
-          <div className="access-inner">
-            <div className="access-info">
-              <p className="access-address">〒107-0061<br />東京都港区北青山1-3-3<br />三橋ビル 3階</p>
-              <div className="access-detail">
-                <p>東京メトロ銀座線「青山一丁目駅」より徒歩約3分</p>
-              </div>
-            </div>
-            <div className="access-map">
-              <div className="map-placeholder">
-                <svg viewBox="0 0 48 48" fill="none"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z" stroke="currentColor" strokeWidth="1.5" transform="translate(12,10) scale(1.5)"/><circle cx="24" cy="23" r="3" stroke="currentColor" strokeWidth="1.5"/></svg>
-                <p>Google Map 埋め込みエリア</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* CTA */}
       <section className="section cta">
         <div className="container">
