@@ -21,7 +21,7 @@ export default function GreetingPage() {
         <div className="container">
           <div className="greeting-inner">
             <div className="greeting-text">
-              <div className="greeting-role">CEO</div>
+              <div className="greeting-role">代表社員</div>
               <h3 className="greeting-name">畠山 翔翼<span className="greeting-ruby">（はたけやま つばさ）</span></h3>
               <div className="greeting-body">
                 <p>循環器内科医として、岩手県立中央病院や榊原記念病院で、<br className="pc-only" />急性期から亜急性期病院での診療に従事してまいりました。</p>
