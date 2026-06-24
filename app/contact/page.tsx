@@ -1,13 +1,40 @@
 "use client";
 
+import { useState } from "react";
 import type { FormEvent } from "react";
 import EmailCopy from "../../components/EmailCopy";
 
 export default function ContactPage() {
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  const [status, setStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    alert("お問い合わせありがとうございます。\n※実際の送信にはサーバー側の設定が必要です。");
-    (e.target as HTMLFormElement).reset();
+    setStatus("sending");
+
+    const form = e.target as HTMLFormElement;
+    const data = {
+      company: (form.elements.namedItem("company") as HTMLInputElement).value,
+      name: (form.elements.namedItem("name") as HTMLInputElement).value,
+      email: (form.elements.namedItem("email") as HTMLInputElement).value,
+      subject: (form.elements.namedItem("subject") as HTMLSelectElement).value,
+      message: (form.elements.namedItem("message") as HTMLTextAreaElement).value,
+    };
+
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (res.ok) {
+        setStatus("sent");
+        form.reset();
+      } else {
+        setStatus("error");
+      }
+    } catch {
+      setStatus("error");
+    }
   }
 
   return (
@@ -80,8 +107,11 @@ export default function ContactPage() {
                   <label htmlFor="message">お問い合わせ内容 <span className="required">必須</span></label>
                   <textarea id="message" name="message" rows={6} required placeholder="お問い合わせ内容をご記入ください"></textarea>
                 </div>
-                <p className="form-note">※ このフォームはデモ用です。実際の送信にはサーバー側の設定が必要です。</p>
-                <button type="submit" className="btn btn-primary btn-full">送信する</button>
+                {status === "sent" && <p className="form-success">お問い合わせを送信しました。2営業日以内にご返信いたします。</p>}
+                {status === "error" && <p className="form-error">送信に失敗しました。お手数ですがメールにて直接お問い合わせください。</p>}
+                <button type="submit" className="btn btn-primary btn-full" disabled={status === "sending"}>
+                  {status === "sending" ? "送信中..." : "送信する"}
+                </button>
               </form>
             </div>
           </div>
