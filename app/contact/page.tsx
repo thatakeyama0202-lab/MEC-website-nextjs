@@ -1,6 +1,7 @@
 "use client";
 
 import type { FormEvent } from "react";
+import EmailCopy from "../../components/EmailCopy";
 
 export default function ContactPage() {
   function handleSubmit(e: FormEvent<HTMLFormElement>) {
@@ -34,7 +35,7 @@ export default function ContactPage() {
                   </div>
                   <div>
                     <p className="contact-detail-label">メール</p>
-                    <a href="mailto:info@medical-echo-consult.com" className="contact-detail-value">info@medical-echo-consult.com</a>
+                    <EmailCopy />
                   </div>
                 </div>
                 <div className="contact-detail-item">

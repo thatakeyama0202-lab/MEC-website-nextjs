@@ -752,26 +752,13 @@ ul { list-style: none; }
     background: var(--color-accent);
 }
 
-.greeting-photo-placeholder {
+.greeting-photo-img {
     width: 100%;
-    height: 400px;
-    background: var(--color-border);
+    max-width: 360px;
+    height: auto;
     border-radius: 16px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    color: var(--color-text-light);
-}
-
-.greeting-photo-placeholder svg {
-    width: 60px;
-    height: 60px;
-}
-
-.greeting-photo-placeholder p {
-    font-size: 0.8rem;
+    object-fit: cover;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
 }
 
 /* ===== Qualifications ===== */
@@ -2485,7 +2472,7 @@ a.contact-detail-value:hover { color: var(--color-accent); }
         gap: 32px;
     }
 
-    .greeting-photo-placeholder { height: 240px; }
+    .greeting-photo-img { max-width: 260px; }
     .contact-layout { grid-template-columns: 1fr; gap: 40px; }
     .contact-form-wrapper { padding: 24px; }
 
@@ -3008,4 +2995,108 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     .merit-grid { grid-template-columns: 1fr; }
 
     .svc-notice { flex-direction: column; gap: 10px; padding: 20px; }
+}
+
+/* ===== Email Copy Button ===== */
+.email-copy {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: 1.5px solid var(--border);
+    border-radius: 8px;
+    padding: 8px 14px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--primary);
+    transition: background 0.2s, border-color 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+.email-copy:hover {
+    background: var(--primary-light);
+    border-color: var(--primary);
+    box-shadow: 0 2px 8px rgba(37,99,235,0.10);
+}
+.email-copy:active {
+    transform: scale(0.97);
+}
+.email-copy-icon {
+    width: 18px;
+    height: 18px;
+    flex-shrink: 0;
+    color: var(--primary);
+}
+.email-copy-address {
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+.email-copy-clipboard {
+    width: 16px;
+    height: 16px;
+    flex-shrink: 0;
+    color: var(--text-muted);
+    transition: color 0.2s;
+}
+.email-copy:hover .email-copy-clipboard {
+    color: var(--primary);
+}
+.email-copy-toast {
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--text);
+    color: #fff;
+    font-size: 0.75rem;
+    padding: 4px 12px;
+    border-radius: 6px;
+    white-space: nowrap;
+    animation: toast-fade 2s ease forwards;
+    pointer-events: none;
+}
+@keyframes toast-fade {
+    0% { opacity: 0; transform: translateX(-50%) translateY(4px); }
+    15% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    75% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.email-copy-footer {
+    margin-top: 12px;
+    border-color: rgba(255,255,255,0.25);
+    color: #fff;
+}
+.email-copy-footer .email-copy-icon,
+.email-copy-footer .email-copy-clipboard {
+    color: rgba(255,255,255,0.7);
+}
+.email-copy-footer .email-copy-address {
+    color: #fff;
+}
+.email-copy-footer:hover {
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.5);
+    box-shadow: none;
+}
+.email-copy-footer:hover .email-copy-clipboard {
+    color: #fff;
+}
+
+.company-table .email-copy {
+    border: none;
+    padding: 0;
+    font-size: inherit;
+}
+.company-table .email-copy:hover {
+    background: none;
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .email-copy {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+        gap: 6px;
+    }
 }

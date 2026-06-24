@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import EmailCopy from "../../components/EmailCopy";
 
 export const metadata: Metadata = {
   title: "会社概要",
@@ -46,7 +47,7 @@ export default function CompanyPage() {
                 <tr><th>設立</th><td>2026年6月</td></tr>
                 <tr><th>所在地</th><td>〒107-0061 東京都港区北青山1-3-3 三橋ビル 3階</td></tr>
                 <tr><th>事業内容</th><td>超音波検査支援サービス、オンライン専門医コンサルテーションサービス</td></tr>
-                <tr><th>メール</th><td><a href="mailto:info@medical-echo-consult.com">info@medical-echo-consult.com</a></td></tr>
+                <tr><th>メール</th><td><EmailCopy /></td></tr>
               </tbody>
             </table>
           </div>

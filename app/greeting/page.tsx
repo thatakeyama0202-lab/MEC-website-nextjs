@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Image from "next/image";
 
 export const metadata: Metadata = {
   title: "代表挨拶",
@@ -34,13 +35,7 @@ export default function GreetingPage() {
               </div>
             </div>
             <div className="greeting-photo">
-              <div className="greeting-photo-placeholder">
-                <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <circle cx="40" cy="30" r="14" stroke="currentColor" strokeWidth="2"/>
-                  <path d="M12 68c0-15.464 12.536-28 28-28s28 12.536 28 28" stroke="currentColor" strokeWidth="2"/>
-                </svg>
-                <p>代表写真</p>
-              </div>
+              <Image src="/ceo.png" alt="代表 畠山 翔翼" width={400} height={400} className="greeting-photo-img" priority />
             </div>
           </div>
         </div>
