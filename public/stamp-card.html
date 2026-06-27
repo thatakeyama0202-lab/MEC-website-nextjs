@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>おてつだいスタンプカード</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&family=Yomogi&family=Zen+Maru+Gothic:wght@500;700;900&display=swap" rel="stylesheet" />
+<style>
+  :root {
+    --pink:      #ffb3c8;
+    --pink-deep: #ff7fa3;
+    --mint:      #a8e6cf;
+    --mint-deep: #5cc9a0;
+    --cream:     #fff7e6;
+    --lavender:  #d6c6f5;
+    --lav-deep:  #a98ee0;
+    --yellow:    #ffe6a3;
+    --ink:       #6b5b73;       /* 読みやすい濃いめのグレーパープル */
+    --paper:     #fffdf9;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: #efe7f7;
+    font-family: "Zen Maru Gothic", "Yu Gothic", "Hiragino Maru Gothic ProN", sans-serif;
+    color: var(--ink);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  /* ===== A4 用紙 (210 x 297mm) ===== */
+  .page {
+    width: 210mm;
+    height: 297mm;
+    margin: 14px auto;
+    background:
+      radial-gradient(circle at 12% 8%,  rgba(255,179,200,.30) 0, transparent 22%),
+      radial-gradient(circle at 88% 8%,  rgba(168,230,207,.30) 0, transparent 22%),
+      radial-gradient(circle at 10% 92%, rgba(214,198,245,.32) 0, transparent 24%),
+      radial-gradient(circle at 90% 92%, rgba(255,230,163,.30) 0, transparent 24%),
+      var(--paper);
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(120,100,140,.25);
+    padding: 13mm 12mm 11mm;
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* ===== 可愛い点線フレーム ===== */
+  .frame {
+    position: absolute;
+    inset: 7mm;
+    border: 3px dashed var(--lav-deep);
+    border-radius: 26px;
+    pointer-events: none;
+    opacity: .55;
+  }
+  .frame::after {
+    content: "";
+    position: absolute;
+    inset: 5px;
+    border: 2px dotted var(--pink-deep);
+    border-radius: 20px;
+    opacity: .7;
+  }
+
+  /* ===== 四隅 & 余白の飾り ===== */
+  .deco {
+    position: absolute;
+    line-height: 1;
+    user-select: none;
+    z-index: 1;
+  }
+  .corner { font-size: 30px; filter: drop-shadow(0 2px 1px rgba(0,0,0,.06)); }
+  .c-tl { top: 9mm;  left: 9mm; }
+  .c-tr { top: 9mm;  right: 9mm; }
+  .c-bl { bottom: 9mm; left: 9mm; }
+  .c-br { bottom: 9mm; right: 9mm; }
+
+  .edge { font-size: 19px; opacity: .9; }
+
+  /* ===== タイトル ===== */
+  header {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-top: 4mm;
+  }
+  .ribbon {
+    display: inline-block;
+    background: linear-gradient(135deg, var(--pink) 0%, var(--lavender) 55%, var(--mint) 100%);
+    padding: 12px 40px 14px;
+    border-radius: 999px;
+    border: 4px solid #fff;
+    box-shadow: 0 6px 0 rgba(169,142,224,.30), 0 8px 18px rgba(140,110,170,.20);
+  }
+  h1 {
+    font-family: "Mochiy Pop One", "Zen Maru Gothic", sans-serif;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #fff;
+    text-shadow:
+      2px 2px 0 var(--pink-deep),
+      -1px -1px 0 var(--lav-deep),
+       0 3px 4px rgba(120,90,150,.25);
+  }
+  .subtitle {
+    font-family: "Yomogi", "Zen Maru Gothic", cursive;
+    font-size: 16px;
+    color: var(--pink-deep);
+    margin-top: 9px;
+  }
+  .name-line {
+    font-family: "Yomogi", cursive;
+    font-size: 15px;
+    color: var(--ink);
+    margin-top: 8px;
+  }
+  .name-line span {
+    display: inline-block;
+    border-bottom: 2px dotted var(--lav-deep);
+    min-width: 150px;
+    margin-left: 6px;
+  }
+
+  /* ===== スタンプ グリッド ===== */
+  .grid {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 7px 6px;
+    align-content: space-evenly;
+    justify-items: center;
+    padding: 4mm 2mm 3mm;
+    position: relative;
+    z-index: 2;
+  }
+  .stamp {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 3px dashed var(--pink-deep);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Zen Maru Gothic", sans-serif;
+    font-weight: 900;
+    font-size: 27px;
+    color: var(--ink);
+    box-shadow: 0 3px 0 rgba(0,0,0,.05), inset 0 0 0 5px #fff;
+    position: relative;
+  }
+  /* 枠の色を淡色で巡回させて可愛く */
+  .stamp:nth-child(5n+1) { border-color: var(--pink-deep);  }
+  .stamp:nth-child(5n+2) { border-color: var(--mint-deep);  }
+  .stamp:nth-child(5n+3) { border-color: var(--lav-deep);   }
+  .stamp:nth-child(5n+4) { border-color: #f0b84a;           }
+  .stamp:nth-child(5n+5) { border-color: #6fc3e0;           }
+
+  /* 10の倍数はちょっと特別 (小さなお花マーク) */
+  .stamp.milestone::after {
+    content: "🌸";
+    position: absolute;
+    top: -10px;
+    right: -8px;
+    font-size: 15px;
+  }
+  .stamp.goal { background: linear-gradient(135deg,#fff,#fff2cc); }
+  .stamp.goal::after {
+    content: "🎁";
+    position: absolute;
+    top: -12px;
+    right: -10px;
+    font-size: 17px;
+  }
+
+  /* ===== 下部メッセージ ===== */
+  footer {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+    margin-bottom: 2mm;
+  }
+  .reward {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(135deg, var(--mint) 0%, var(--cream) 50%, var(--pink) 100%);
+    padding: 12px 30px;
+    border-radius: 18px;
+    border: 3px solid #fff;
+    box-shadow: 0 4px 0 rgba(92,201,160,.30), 0 6px 14px rgba(120,140,120,.18);
+    font-family: "Mochiy Pop One", "Zen Maru Gothic", sans-serif;
+    font-size: 21px;
+    color: #5a7d63;
+    text-shadow: 1px 1px 0 #fff;
+  }
+  .reward .num {
+    color: var(--pink-deep);
+    font-size: 26px;
+  }
+
+  /* ===== 印刷設定 ===== */
+  @page { size: A4 portrait; margin: 0; }
+  @media print {
+    html, body { background: #fff; }
+    .page { margin: 0; box-shadow: none; width: 210mm; height: 297mm; }
+    .no-print { display: none; }
+  }
+  .no-print {
+    text-align: center;
+    margin: 10px 0 20px;
+    font-family: "Zen Maru Gothic", sans-serif;
+  }
+  .no-print button {
+    font-family: inherit;
+    font-size: 15px;
+    padding: 10px 26px;
+    border: none;
+    border-radius: 999px;
+    background: var(--pink-deep);
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 4px 0 #d65f82;
+  }
+  .no-print button:active { transform: translateY(2px); box-shadow: 0 2px 0 #d65f82; }
+</style>
+</head>
+<body>
+
+  <div class="page">
+    <div class="frame"></div>
+
+    <!-- 四隅の飾り -->
+    <div class="deco corner c-tl">🐰</div>
+    <div class="deco corner c-tr">🐻</div>
+    <div class="deco corner c-bl">🐿️</div>
+    <div class="deco corner c-br">🐭</div>
+
+    <!-- 余白の飾り -->
+    <div class="deco edge" style="top:11mm; left:34%;">🌸</div>
+    <div class="deco edge" style="top:10mm; left:62%;">⭐</div>
+    <div class="deco edge" style="top:30%; left:8mm;">🍄</div>
+    <div class="deco edge" style="top:48%; left:8.5mm;">🌼</div>
+    <div class="deco edge" style="top:66%; left:8mm;">💗</div>
+    <div class="deco edge" style="top:30%; right:8mm;">🌰</div>
+    <div class="deco edge" style="top:48%; right:8.5mm;">⭐</div>
+    <div class="deco edge" style="top:66%; right:8mm;">🌷</div>
+    <div class="deco edge" style="bottom:9mm; left:33%;">🍄</div>
+    <div class="deco edge" style="bottom:8.5mm; left:60%;">🌰</div>
+
+    <!-- タイトル -->
+    <header>
+      <div class="ribbon">
+        <h1>おてつだいスタンプカード</h1>
+      </div>
+      <div class="subtitle">🌟 がんばった ぶんだけ スタンプを ためよう！ 🌟</div>
+      <div class="name-line">なまえ <span></span></div>
+    </header>
+
+    <!-- スタンプ枠 1〜47 -->
+    <main class="grid" id="grid"></main>
+
+    <!-- ごほうびメッセージ -->
+    <footer>
+      <div class="reward">
+        🐾 <span><span class="num">47</span>こ あつまったら ごほうび！</span> 🎀
+      </div>
+    </footer>
+  </div>
+
+  <div class="no-print">
+    <button onclick="window.print()">🖨️ いんさつする</button>
+  </div>
+
+  <script>
+    // 1〜47 の丸枠を生成
+    const grid = document.getElementById('grid');
+    for (let i = 1; i <= 47; i++) {
+      const d = document.createElement('div');
+      d.className = 'stamp';
+      if (i === 47) d.classList.add('goal');
+      else if (i % 10 === 0) d.classList.add('milestone');
+      d.textContent = i;
+      grid.appendChild(d);
+    }
+  </script>
+</body>
+</html>
