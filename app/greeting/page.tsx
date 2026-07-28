@@ -56,6 +56,7 @@ export default function GreetingPage() {
                 <li>循環器専門医</li>
                 <li>SHD経食道エコー認定医</li>
                 <li>周術期経食道エコー認定医（JB-POT）</li>
+                <li>PET核医学認定医</li>
                 <li>認定産業医</li>
               </ul>
             </div>
