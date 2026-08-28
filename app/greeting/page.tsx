@@ -54,6 +54,7 @@ export default function GreetingPage() {
               <ul className="qual-list">
                 <li>内科専門医</li>
                 <li>循環器専門医</li>
+                <li>超音波専門医</li>
                 <li>SHD経食道エコー認定医</li>
                 <li>周術期経食道エコー認定医（JB-POT）</li>
                 <li>PET核医学認定医</li>
