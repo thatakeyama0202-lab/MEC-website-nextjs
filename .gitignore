@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# サンプルの環境変数ファイルは共有する
+!.env.example
