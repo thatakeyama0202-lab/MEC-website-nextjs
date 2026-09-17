@@ -83,13 +83,14 @@ function ConsultCompareRow({ index, isLast, method, answer }: RowProps) {
           </p>
         </div>
       </div>
+      {/* 後段：「見出し」と「内容」を別々のボックスに分けて並べる */}
       <div className={`consult-compare-cell consult-compare-after${lastClass}`}>
-        <span className="consult-compare-icon">{icons[answer.icon]}</span>
-        <div>
-          <p className="consult-compare-label">
-            {answer.label}
-            <span className="consult-compare-arrow" aria-label="→">→</span>
-          </p>
+        <div className="consult-compare-label-box">
+          <span className="consult-compare-icon">{icons[answer.icon]}</span>
+          <p className="consult-compare-label">{answer.label}</p>
+        </div>
+        <span className="consult-compare-arrow" aria-hidden="true">→</span>
+        <div className="consult-compare-answer-box">
           <p className="consult-compare-answer">{answer.text}</p>
         </div>
       </div>
