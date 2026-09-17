@@ -1891,11 +1891,31 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     color: var(--color-text);
     margin-bottom: 4px;
 }
+/* 課題：「課題:」の見出し行の下に、◆付きで1件ずつ改行表示 */
+.consult-compare-issue-label {
+    font-size: 0.85rem;
+    color: var(--color-text-light);
+    margin-bottom: 2px;
+}
+.consult-compare-issues {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
 .consult-compare-issue {
+    display: flex;
+    align-items: flex-start;
+    gap: 6px;
     font-size: 0.88rem;
     color: var(--color-text-light);
 }
-.consult-compare-issue-label { margin-right: 4px; }
+.consult-compare-issue-mark {
+    flex-shrink: 0;
+    font-size: 0.7rem;
+    color: var(--color-accent);
+    line-height: 1.7;
+    transform: translateY(1px);
+}
 
 /* 後段：「見出しボックス」→「内容ボックス」の2つに分けて横に並べる */
 .consult-compare-after {

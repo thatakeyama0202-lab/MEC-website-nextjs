@@ -77,10 +77,15 @@ function ConsultCompareRow({ index, isLast, method, answer }: RowProps) {
         <span className="consult-compare-num">{index + 1}</span>
         <div>
           <p className="consult-compare-method">{method.title}</p>
-          <p className="consult-compare-issue">
-            <span className="consult-compare-issue-label">課題:</span>
-            {method.issue}
-          </p>
+          <p className="consult-compare-issue-label">課題:</p>
+          <ul className="consult-compare-issues">
+            {method.issues.map((issue) => (
+              <li key={issue} className="consult-compare-issue">
+                <span className="consult-compare-issue-mark" aria-hidden="true">◆</span>
+                {issue}
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
       {/* 後段：「見出し」と「内容」を別々のボックスに分けて並べる */}
