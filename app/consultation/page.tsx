@@ -28,18 +28,24 @@ export default function ConsultationPage() {
 
           <div className="consult-unlimited">
             <div className="consult-unlimited-item">
-              <span className="consult-unlimited-number">365</span>
-              <span className="consult-unlimited-unit">日</span>
+              <div className="consult-unlimited-heading">
+                <span className="consult-unlimited-number">365</span>
+                <span className="consult-unlimited-unit">日</span>
+              </div>
               <p>いつでも相談可能</p>
             </div>
             <div className="consult-unlimited-divider"></div>
             <div className="consult-unlimited-item">
-              <span className="consult-unlimited-number">無制限</span>
+              <div className="consult-unlimited-heading">
+                <span className="consult-unlimited-number">無制限</span>
+              </div>
               <p>相談回数の上限なし</p>
             </div>
             <div className="consult-unlimited-divider"></div>
             <div className="consult-unlimited-item">
-              <span className="consult-unlimited-number">全員、専門医</span>
+              <div className="consult-unlimited-heading">
+                <span className="consult-unlimited-number">全員、専門医</span>
+              </div>
               <p>相談を受ける医師は全員、<br />厚生労働省認定の専門医です。</p>
             </div>
           </div>

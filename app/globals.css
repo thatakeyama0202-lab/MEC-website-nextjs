@@ -1822,13 +1822,15 @@ a.contact-detail-value:hover { color: var(--color-accent); }
 /* ===== Consultation Page ===== */
 
 /* Unlimited highlight */
+/* 「365日 / 無制限 / 全員、専門医」の3列バナー
+   ※文字サイズは全体を +6pt（≒0.5rem）大きくしてある */
 .consult-unlimited {
     display: grid;
     grid-template-columns: 1fr auto 1fr auto 1fr;
-    align-items: center;
+    align-items: start; /* 大きな文字の行を3列で横一直線に揃える */
     background: linear-gradient(135deg, #0f172a 0%, #1e3a5f 100%);
     border-radius: 16px;
-    padding: 40px 32px;
+    padding: 48px 32px;
     margin-bottom: 40px;
 }
 
@@ -1838,12 +1840,21 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     padding: 0 12px;
 }
 
+/* 数字・見出し行の高さを固定し、下の説明文の位置も3列で揃える */
+.consult-unlimited-heading {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    height: 3.6rem; /* 「日」が付く列も付かない列も同じ高さにする */
+}
+
 .consult-unlimited-number {
     display: inline;
-    font-size: 2.4rem;
+    font-size: 2.9rem;
     font-weight: 800;
     letter-spacing: 0.02em;
     line-height: 1.2;
+    white-space: nowrap; /* 「全員、専門医」が途中で折り返さないようにする */
     background: linear-gradient(135deg, #60a5fa, #38bdf8);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1851,25 +1862,34 @@ a.contact-detail-value:hover { color: var(--color-accent); }
 }
 
 .consult-unlimited-unit {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: rgba(255,255,255,0.9);
-    margin-left: 3px;
+    margin-left: 4px;
 }
 
 .consult-unlimited-item p {
-    font-size: 0.82rem;
-    color: rgba(255,255,255,0.7);
-    margin-top: 8px;
+    font-size: 1.32rem;
+    color: rgba(255,255,255,0.75);
+    margin-top: 12px;
     line-height: 1.6;
 }
 
 .consult-unlimited-divider {
     width: 1px;
-    height: 64px;
+    height: 96px;
     background: rgba(255,255,255,0.2);
     flex-shrink: 0;
     justify-self: center;
+    align-self: center;
+}
+
+/* タブレット幅では少しだけ縮めて3列を維持する */
+@media (max-width: 1024px) {
+    .consult-unlimited-number { font-size: 2.4rem; }
+    .consult-unlimited-unit { font-size: 1.5rem; }
+    .consult-unlimited-item p { font-size: 1.1rem; }
+    .consult-unlimited-heading { height: 3rem; }
 }
 
 .consult-features {
@@ -2473,10 +2493,12 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     .overview-hero-divider { width: 100%; height: 1px; }
     .overview-hero-divider span { width: 60%; height: 1px; }
 
-    .consult-unlimited { grid-template-columns: 1fr; gap: 24px; padding: 32px 24px; }
+    .consult-unlimited { grid-template-columns: 1fr; gap: 24px; padding: 36px 24px; }
     .consult-unlimited-divider { width: 60%; height: 1px; justify-self: center; }
-    .consult-unlimited-number { font-size: 2rem; }
-    .consult-unlimited-unit { font-size: 1.1rem; }
+    .consult-unlimited-heading { height: auto; }
+    .consult-unlimited-number { font-size: 2.5rem; }
+    .consult-unlimited-unit { font-size: 1.6rem; }
+    .consult-unlimited-item p { font-size: 1.2rem; }
     .consult-features { grid-template-columns: 1fr; }
     .consult-departments { grid-template-columns: repeat(2, 1fr); }
     .chat-device { max-width: 340px; }
