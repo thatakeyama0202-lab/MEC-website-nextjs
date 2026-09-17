@@ -232,7 +232,7 @@ export default function ConsultationPage() {
                 <ul>
                   <li>褥瘡や皮膚病変の対応</li>
                 </ul>
-                <p className="consult-dept-note">※チャットに写真＋相談内容を送付頂き、回答いたします</p>
+                <p className="consult-dept-note">※チャットに写真＋相談内容を送付頂き、専門医が回答いたします</p>
               </div>
             </div>
 
