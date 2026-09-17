@@ -44,7 +44,7 @@ export const mecAnswers = [
   },
   {
     label: "採用・費用コスト",
-    text: "採用不要であり、月額料金のみで低コスト。月額 30,000円〜（税別）",
+    text: "採用不要であり、月額料金のみで低コスト。",
     icon: "cost",
   },
 ] as const;
