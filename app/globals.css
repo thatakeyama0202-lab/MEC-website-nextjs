@@ -1821,6 +1821,128 @@ a.contact-detail-value:hover { color: var(--color-accent); }
 
 /* ===== Consultation Page ===== */
 
+/* 比較セクション（よくある方法と課題 → MECなら）
+   左右のセルを CSS Grid の同じ行に置き、1対1で高さが揃うようにしている */
+.consult-compare {
+    max-width: 960px;
+    margin: 0 auto 64px;
+}
+
+.consult-compare-title {
+    text-align: center;
+    font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+    font-weight: 700;
+    color: var(--color-primary);
+    letter-spacing: -0.01em;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+
+.consult-compare-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 24px;
+    row-gap: 0;
+}
+
+/* 列見出し（h3） */
+.consult-compare-colhead {
+    font-size: 0.95rem;
+    font-weight: 700;
+    line-height: 1.5;
+    padding: 0 8px 14px;
+}
+.consult-compare-colhead-before { color: var(--color-text-light); }
+.consult-compare-colhead-after  { color: var(--color-accent-dark); }
+
+/* セル共通 */
+.consult-compare-cell {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 22px 20px;
+}
+.consult-compare-cell p { line-height: 1.7; }
+
+/* 前段：控えめなトーン（白背景、行間は薄い罫線のみ） */
+.consult-compare-before {
+    border-top: 1px solid var(--color-border);
+}
+.consult-compare-before.is-last {
+    border-bottom: 1px solid var(--color-border);
+}
+.consult-compare-num {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    border: 1px solid var(--color-border);
+    color: var(--color-text-light);
+    font-size: 0.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2px;
+}
+.consult-compare-method {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-text);
+    margin-bottom: 4px;
+}
+.consult-compare-issue {
+    font-size: 0.88rem;
+    color: var(--color-text-light);
+}
+.consult-compare-issue-label { margin-right: 4px; }
+
+/* 後段：淡色背景 + 枠線で強調（3行をつなげて1枚のカードに見せる） */
+.consult-compare-after {
+    background: var(--color-accent-bg);
+    border-left: 1px solid var(--color-accent-light);
+    border-right: 1px solid var(--color-accent-light);
+    border-top: 1px solid rgba(59, 130, 246, 0.25);
+}
+.consult-compare-after.is-first {
+    /* 後段の1行目：上枠線と上側の角丸 */
+    border-top: 1px solid var(--color-accent-light);
+    border-radius: 14px 14px 0 0;
+}
+.consult-compare-after.is-last {
+    border-bottom: 1px solid var(--color-accent-light);
+    border-radius: 0 0 14px 14px;
+}
+.consult-compare-icon {
+    flex-shrink: 0;
+    width: 26px;
+    height: 26px;
+    color: var(--color-accent);
+    margin-top: 2px;
+}
+.consult-compare-icon svg { width: 100%; height: 100%; }
+.consult-compare-label {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--color-accent-dark);
+    margin-bottom: 4px;
+}
+.consult-compare-arrow { margin-left: 6px; }
+.consult-compare-answer {
+    font-size: 1rem;
+    color: var(--color-text);
+}
+
+/* 補足文（小さめ） */
+.consult-compare-note {
+    max-width: 760px;
+    margin: 24px auto 0;
+    font-size: 0.82rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    text-align: center;
+}
+
 /* Unlimited highlight */
 /* 「365日 / 無制限 / 全員、専門医」の3列バナー
    ※文字サイズは全体を +6pt（≒0.5rem）大きくしてある */
@@ -2492,6 +2614,22 @@ a.contact-detail-value:hover { color: var(--color-accent); }
     .overview-hero-title { font-size: 1.2rem; }
     .overview-hero-divider { width: 100%; height: 1px; }
     .overview-hero-divider span { width: 60%; height: 1px; }
+
+    /* 比較セクション：縦積みに切替（前段の見出し→前段3枚→後段の見出し→後段3枚） */
+    .consult-compare { margin-bottom: 48px; }
+    .consult-compare-title { margin-bottom: 28px; }
+    .consult-compare-grid { grid-template-columns: 1fr; row-gap: 12px; }
+    .consult-compare-colhead { padding: 0 4px 2px; }
+    .consult-compare-colhead-before { order: 0; }
+    .consult-compare-before { order: 1; }
+    .consult-compare-colhead-after { order: 2; margin-top: 20px; }
+    .consult-compare-after { order: 3; }
+    .consult-compare-cell { padding: 18px 16px; border-radius: 14px; }
+    .consult-compare-before,
+    .consult-compare-before.is-last { border: 1px solid var(--color-border); background: var(--color-bg-subtle); }
+    .consult-compare-after,
+    .consult-compare-after.is-first,
+    .consult-compare-after.is-last { border: 1px solid var(--color-accent-light); border-radius: 14px; }
 
     .consult-unlimited { grid-template-columns: 1fr; gap: 24px; padding: 36px 24px; }
     .consult-unlimited-divider { width: 60%; height: 1px; justify-self: center; }

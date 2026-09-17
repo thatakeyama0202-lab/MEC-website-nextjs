@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import ConsultComparison from "@/components/ConsultComparison";
 
 export const metadata: Metadata = {
   title: "オンライン専門医コンサルテーション",
@@ -25,6 +26,9 @@ export default function ConsultationPage() {
           <div className="overview-intro">
             <p>日々の診療で生じる臨床上の疑問——<br className="pc-only" />投薬調整、検査結果の解釈、紹介のタイミングなど——を、<br className="pc-only" />チャット形式で専門医に気軽に相談できるサービスです。</p>
           </div>
+
+          {/* 比較セクション（よくある方法と課題 → MECなら） */}
+          <ConsultComparison />
 
           <div className="consult-unlimited">
             <div className="consult-unlimited-item">
