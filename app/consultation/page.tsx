@@ -226,6 +226,18 @@ export default function ConsultationPage() {
 
             <div className="consult-dept-detail">
               <div className="consult-dept-header">
+                <h3>皮膚科/形成外科</h3>
+              </div>
+              <div className="consult-dept-body">
+                <ul>
+                  <li>褥瘡や皮膚病変の対応</li>
+                </ul>
+                <p className="consult-dept-note">※チャットに写真＋相談内容を送付頂き、回答いたします</p>
+              </div>
+            </div>
+
+            <div className="consult-dept-detail">
+              <div className="consult-dept-header">
                 <h3>産科・婦人科</h3>
               </div>
               <div className="consult-dept-body">
