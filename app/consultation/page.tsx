@@ -187,11 +187,12 @@ export default function ConsultationPage() {
                     <li>心疾患患者の薬剤調整（新規開始、薬剤変更、中止検討）</li>
                     <li>抗血小板薬・抗凝固薬の継続・調整。訪問歯科での抜歯や出血イベント時の継続可否</li>
                     <li>浮腫に対する介入</li>
+                    <li>ペースメーカ対応</li>
                   </ul>
                 </div>
                 <div className="consult-dept-group">
                   <h4>2. 心電図読影（12誘導心電図、ホルター心電図）</h4>
-                  <p>写真やPDFをチャットに送付 →<br className="pc-only" />翌営業日までに所見をつけてご返信。</p>
+                  <p>写真やPDFをチャットに送付 → 翌営業日までに所見をつけてご返信。</p>
                   <p className="consult-dept-note">※個人情報に関わる部分は、マスキングしていただく必要があります</p>
                   <p className="consult-dept-note">クライアント様自院で撮影したエコー画像の解析も承ります（別途相談）</p>
                 </div>
