@@ -82,6 +82,8 @@ export default function ContactPage() {
               </div>
             </div>
             <div className="contact-form-wrapper">
+              {/* フォーム右上の注意書き */}
+              <p className="contact-form-notice">営業目的でのお問い合わせはご遠慮ください。</p>
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="form-group">
                   <label htmlFor="company">医療機関名・会社名</label>

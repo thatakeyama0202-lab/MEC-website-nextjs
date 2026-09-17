@@ -1532,6 +1532,14 @@ ul { list-style: none; }
     align-items: start;
 }
 
+/* フォーム右上の注意書き（営業目的のお問い合わせ不可） */
+.contact-form-notice {
+    text-align: right;
+    font-size: 0.82rem;
+    color: var(--color-text-light);
+    margin-bottom: 16px;
+}
+
 .contact-info-title {
     font-size: 1.4rem;
     font-weight: 700;
