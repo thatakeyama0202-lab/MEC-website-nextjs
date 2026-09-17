@@ -26,7 +26,7 @@ export const commonMethods = [
   },
   {
     title: "非常勤専門医の直接雇用",
-    issues: ["採用が難しい", "診療科ごとに固定費がかかる"],
+    issues: ["採用が難しい", "給与、保険等で高コスト"],
   },
 ];
 
